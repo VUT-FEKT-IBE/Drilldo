@@ -68,15 +68,22 @@ function downloadString(text, fileType, fileName) {
       :key="props.questions.number"
     />
     <div class="controls">
-      <button class="but-control previous" @click="move_by(-1)">
-        <span class="but-text">Previous</span></button
-      ><button class="but-control results" @click="showRes()">
-        <span class="but-text">Results</span></button
-      ><button class="but-control results" @click="downloadStats()">
-        <span class="but-text">Download stats</span></button
-      ><button class="but-control next" @click="move_by(1)">
-        <span class="but-text">Next</span>
-      </button>
+      <div class="subcontrols movement">
+        <button class="but-control" @click="move_by(-1)">
+          <span class="but-text">Previous</span>
+        </button>
+        <button class="but-control" @click="move_by(1)">
+          <span class="but-text">Next</span>
+        </button>
+      </div>
+      <div class="subcontrols misc">
+        <button class="but-control" @click="showRes()">
+          <span class="but-text">Results</span>
+        </button>
+        <button class="but-control" @click="downloadStats()">
+          <span class="but-text">Download stats</span>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -86,26 +93,44 @@ function downloadString(text, fileType, fileName) {
   display: flex;
   flex-direction: column;
   place-items: center;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin: 20px 0px;
 }
 .controls {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   place-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 600px;
+  margin: 0px 40px;
+}
+.subcontrols {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
   margin: 0px 40px;
 }
 .but-control {
   display: flex;
   border-radius: 5px;
   padding: 10px 20px;
-  margin: 2px;
+  margin: 5px;
   width: 100%;
   text-align: center;
   border: 0px;
   background-color: #2a9d8f;
+  color: white;
+}
+.movement .but-control {
+  background-color: #2a9d8f;
+  color: white;
+}
+.misc .but-control {
+  background-color: #516672;
   color: white;
 }
 </style>

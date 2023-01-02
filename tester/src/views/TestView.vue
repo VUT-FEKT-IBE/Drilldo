@@ -23,6 +23,5 @@ function getData(data) {
   flex-direction: column;
   width: 100%;
   place-items: center;
-  margin: 20px;
 }
 </style>
