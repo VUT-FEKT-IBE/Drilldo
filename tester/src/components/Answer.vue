@@ -25,7 +25,9 @@ function toggleSelection() {
     class="answer"
     v-bind:class="{
       correct: props.answer.correct && props.answer.isSelected,
-      incorrect: props.answer.correct && !props.answer.isSelected,
+      incorrect:
+        (props.answer.correct && !props.answer.isSelected) ||
+        (!props.answer.correct && props.answer.isSelected),
     }"
     v-else
     @click="toggleSelection()"
