@@ -29,17 +29,18 @@ defineExpose({ getResult });
   display: flex;
   flex-direction: column;
   place-items: center;
-  max-width: fit-content;
   margin: 20px 0px;
+  width: 100%;
 }
 .title {
   display: flex;
+  width: 100%;
 }
 .answers {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   place-items: center;
-  max-width: fit-content;
+  width: 100%;
 }
 </style>

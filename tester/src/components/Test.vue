@@ -86,8 +86,7 @@ function downloadString(text, fileType, fileName) {
   display: flex;
   flex-direction: column;
   place-items: center;
-  width: fit-content;
-  max-width: 600px;
+  width: 600px;
   margin: 20px 0px;
 }
 .controls {
