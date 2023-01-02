@@ -1,0 +1,72 @@
+[
+  {
+    "number": 1,
+    "text": "Rozdělení EZ podle napětí mezi vodiči v uzemněné střídavé soustavě je:",
+    "answers": [
+      {
+        "text": "mn do 25 V; nn do 500 V; vn do 52 kV",
+        "correct": false
+      },
+      {
+        "text": "mn do 50 V; nn do 1000 V; vn do 52 kV",
+        "correct": true
+      },
+      {
+        "text": "mn do 230V; nn do 24 kV; vn do 52 kV",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "text": "Vyberte pravdivá tvrzení o čtverečníku",
+    "answers": [
+      {
+        "text": "Mezislovní mezery mají v průměru velikost třetiny čtverečníku",
+        "correct": true
+      },
+      {
+        "text": "Čtverečník se též značí \"en\" ",
+        "correct": false
+      },
+      {
+        "text": "Čtverečník má větší velikost než půlčtverečník",
+        "correct": true
+      },
+      {
+        "text": "Čtverečník je totéž jako kuželka",
+        "correct": false
+      },
+      {
+        "text": "Velikost čtverečníku se odvozuje od použitého písma",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "text": "Ktery z nasledujicich doporuceni slouzi ke kompresi videa?",
+    "answers": [
+      {
+        "text": "H.264",
+        "correct": true
+      },
+      {
+        "text": "RTSP",
+        "correct": false
+      },
+      {
+        "text": "Q.931",
+        "correct": false
+      },
+      {
+        "text": "MPEG-7",
+        "correct": false
+      },
+      {
+        "text": "H.323",
+        "correct": false
+      }
+    ]
+  }
+]
