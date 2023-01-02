@@ -63,10 +63,13 @@ function downloadString(text, fileType, fileName) {
 
 <template>
   <div class="test">
-    <Question
-      :question="props.questions[index]"
-      :key="props.questions.number"
-    />
+    <div class="question">
+      <Question
+        :question="props.questions[index]"
+        :key="props.questions.number"
+      />
+      <span>{{ index + 1 }}/{{ props.questions.length }}</span>
+    </div>
     <div class="controls">
       <div class="subcontrols movement">
         <button class="but-control" @click="move_by(-1)">
@@ -89,6 +92,13 @@ function downloadString(text, fileType, fileName) {
 </template>
 
 <style scoped>
+.question {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 20px 0px;
+  width: 100%;
+}
 .test {
   display: flex;
   flex-direction: column;
