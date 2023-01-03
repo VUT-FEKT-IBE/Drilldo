@@ -28,13 +28,12 @@ function getStats(stats) {
     console.error("Error loading stats: Number of questions doesn't match");
   }
   stats.forEach(function (item) {
-    if (questions.value[item.number - 1].number === item.number) {
-      questions.value[item.number - 1].numCorrect = item.numCorrect;
-      questions.value[item.number - 1].numIncorrect = item.numIncorrect;
-    } else {
-      console.log(item.number, questions.value[item.number - 1].number);
-      console.error("Error loading stats");
-    }
+    questions.value.forEach(function (question) {
+      if (question.number === item.number) {
+        question.numCorrect = item.numCorrect;
+        question.numIncorrect = item.numIncorrect;
+      }
+    });
   });
   startTesting();
 }
@@ -50,9 +49,16 @@ function startTesting(view = false) {
       });
     });
   } else {
-    questions.value = questions.value.sort((a, b) =>
-      Math.random() > 0.5 ? -1 : 1
-    );
+    questions.value.sort((a, b) => {
+      if (a.numIncorrect !== b.numIncorrect) {
+        return a.numIncorrect > b.numIncorrect ? -1 : 1;
+      } else if (a.numCorrect !== b.numCorrect) {
+        return a.numCorrect < b.numCorrect ? -1 : 1;
+      } else {
+        return Math.random() > 0.5 ? 1 : -1;
+      }
+    });
+    console.log(questions.value);
   }
   emit("data", questions.value);
 }
@@ -98,6 +104,7 @@ function startTesting(view = false) {
   background-color: #2a9d8f;
   color: white;
 }
+
 .but-with-text {
   margin: 20px;
 }
