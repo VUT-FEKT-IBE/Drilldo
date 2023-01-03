@@ -38,10 +38,21 @@ function getStats(stats) {
   });
   startTesting();
 }
-function startTesting() {
-  questions.value = questions.value.sort((a, b) =>
-    Math.random() > 0.5 ? -1 : 1
-  );
+function startTesting(view = false) {
+  if (view) {
+    questions.value.forEach(function (item) {
+      item.showResults = true;
+      item.answers.forEach(function (answer) {
+        if (answer.correct) {
+          answer.isSelected = true;
+        }
+      });
+    });
+  } else {
+    questions.value = questions.value.sort((a, b) =>
+      Math.random() > 0.5 ? -1 : 1
+    );
+  }
   emit("data", questions.value);
 }
 </script>
@@ -57,6 +68,12 @@ function startTesting() {
       <div class="but-with-text">
         <p>(Optional) You can also upload statistics from a prior session:</p>
         <UploadFile @data="getStats" uploadThing="Statistics" />
+      </div>
+      <div class="but-with-text">
+        <p>Or you can start testing right away:</p>
+        <button class="but-file-upload" @click="startTesting(true)">
+          <span class="but-text">View questions</span>
+        </button>
       </div>
       <div class="but-with-text">
         <p>Or you can start testing right away:</p>
