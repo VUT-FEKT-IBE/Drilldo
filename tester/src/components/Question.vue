@@ -1,11 +1,6 @@
 <script setup>
 import Answer from "./Answer.vue";
 const props = defineProps(["question"]);
-
-function getResult() {
-  console.log("getResult");
-}
-defineExpose({ getResult });
 </script>
 
 <template>
@@ -14,12 +9,8 @@ defineExpose({ getResult });
       {{ props.question.number }}. {{ props.question.text }}
     </div>
     <div class="answers">
-      <Answer
-        v-for="answer in props.question.answers"
-        :question="props.question"
-        :answer="answer"
-        :key="props.number + '-' + answer.text"
-      />
+      <Answer v-for="answer in props.question.answers" :question="props.question" :answer="answer"
+        :key="props.number + '-' + answer.text" />
     </div>
   </div>
 </template>
@@ -32,10 +23,12 @@ defineExpose({ getResult });
   padding-top: 20px;
   width: 100%;
 }
+
 .title {
   display: flex;
   width: 100%;
 }
+
 .answers {
   margin-top: 10px;
   display: flex;

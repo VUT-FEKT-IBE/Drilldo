@@ -58,7 +58,6 @@ function startTesting(view = false) {
         return Math.random() > 0.5 ? 1 : -1;
       }
     });
-    console.log(questions.value);
   }
   emit("data", questions.value);
 }
