@@ -31,6 +31,7 @@ function toggleSelection() {
     }"
     v-else
     @click="toggleSelection()"
+    disabled
   >
     <span class="but-text">{{ props.answer.text }}</span>
   </button>

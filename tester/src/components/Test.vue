@@ -63,13 +63,11 @@ function downloadString(text, fileType, fileName) {
 
 <template>
   <div class="test">
-    <div class="question">
-      <Question
-        :question="props.questions[index]"
-        :key="props.questions.number"
-      />
-      <span>{{ index + 1 }}/{{ props.questions.length }}</span>
-    </div>
+    <Question
+      :question="props.questions[index]"
+      :key="props.questions.number"
+    />
+    <span class="progress">{{ index + 1 }}/{{ props.questions.length }}</span>
     <div class="controls">
       <div class="subcontrols movement">
         <button class="but-control" @click="move_by(-1)">
@@ -80,7 +78,11 @@ function downloadString(text, fileType, fileName) {
         </button>
       </div>
       <div class="subcontrols misc">
-        <button class="but-control" @click="showRes()">
+        <button
+          class="but-control"
+          @click="showRes()"
+          v-if="!props.questions[index].showResults"
+        >
           <span class="but-text">Results</span>
         </button>
         <button class="but-control" @click="downloadStats()">
@@ -92,13 +94,6 @@ function downloadString(text, fileType, fileName) {
 </template>
 
 <style scoped>
-.question {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  margin: 20px 0px;
-  width: 100%;
-}
 .test {
   display: flex;
   flex-direction: column;
@@ -106,6 +101,12 @@ function downloadString(text, fileType, fileName) {
   width: 100%;
   max-width: 600px;
   margin: 20px 0px;
+}
+.progress {
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 .controls {
   display: flex;
