@@ -42,6 +42,7 @@ function startTesting(view = false) {
   if (view) {
     questions.value.forEach(function (item) {
       item.showResults = true;
+      item.viewOnly = true;
       item.answers.forEach(function (answer) {
         if (answer.correct) {
           answer.isSelected = true;

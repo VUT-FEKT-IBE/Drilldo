@@ -6,30 +6,33 @@ import Question from "./Question.vue";
 const props = defineProps(["questions"]);
 const index = ref(0);
 function showRes() {
-  props.questions[index.value].showResults =
-    !props.questions[index.value].showResults;
+  // eslint-disable-next-line vue/no-mutating-props
+  props.questions[index.value].showResults = true;
+  checkScore();
 }
 function move_by(num) {
   const next_num = index.value + num;
   if (0 <= next_num && next_num <= props.questions.length - 1) {
     if (num === 1) {
       if (props.questions[index.value].showResults !== true) {
-        props.questions[index.value].showResults = true;
+        showRes();
       } else {
-        props.questions[index.value].showResults = true;
-        if (
-          props.questions[index.value].maxScore ===
-          props.questions[index.value].score
-        ) {
-          props.questions[index.value].numCorrect++;
-        } else {
-          props.questions[index.value].numIncorrect++;
-        }
         index.value = next_num;
       }
     } else {
       index.value = next_num;
     }
+  }
+}
+function checkScore() {
+  if (
+    props.questions[index.value].maxScore === props.questions[index.value].score
+  ) {
+    // eslint-disable-next-line vue/no-mutating-props
+    props.questions[index.value].numCorrect++;
+  } else {
+    // eslint-disable-next-line vue/no-mutating-props
+    props.questions[index.value].numIncorrect++;
   }
 }
 function downloadStats() {
@@ -85,7 +88,8 @@ function downloadString(text, fileType, fileName) {
         >
           <span class="but-text">Results</span>
         </button>
-        <button class="but-control" @click="downloadStats()">
+        <button class="but-control" @click="downloadStats()"
+          v-if="!props.questions[index].viewOnly">
           <span class="but-text">Download stats</span>
         </button>
       </div>
