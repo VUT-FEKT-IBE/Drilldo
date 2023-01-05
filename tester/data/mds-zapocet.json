@@ -1,0 +1,1610 @@
+[
+    {
+        "text": "Delka IP hlavičky musí být násobkem",
+        "answers": [
+            {
+                "text": "32 bitů",
+                "correct": true
+            },
+            {
+                "text": "16 bitů",
+                "correct": false
+            },
+            {
+                "text": "24 bitů",
+                "correct": false
+            },
+            {
+                "text": "8 bitů",
+                "correct": false
+            }
+        ],
+        "number": 1
+    },
+    {
+        "text": "Datový tok RTP obvykle spotřebuje",
+        "answers": [
+            {
+                "text": "95% z celkoveho toku pro multimedialni data",
+                "correct": true
+            },
+            {
+                "text": "80% z celkoveho toku pro multimedialni data",
+                "correct": false
+            },
+            {
+                "text": "90% z celkoveho toku pro multimedialni data",
+                "correct": false
+            },
+            {
+                "text": "85% z celkoveho toku pro multimedialni data",
+                "correct": false
+            },
+            {
+                "text": "celou sirku pasma",
+                "correct": false
+            }
+        ],
+        "number": 2
+    },
+    {
+        "text": "SDP nenajdu v",
+        "answers": [
+            {
+                "text": "SIP odpovedi 200OK",
+                "correct": false
+            },
+            {
+                "text": "SIP zadosti INVITE",
+                "correct": false
+            },
+            {
+                "text": "SIP odpovedi 180 Ringing",
+                "correct": true
+            },
+            {
+                "text": "SIP zadosti ACK",
+                "correct": false
+            }
+        ],
+        "number": 3
+    },
+    {
+        "text": "Pole CSRC v RTP",
+        "answers": [
+            {
+                "text": "identifikuje prispivajici zdroj",
+                "correct": true
+            },
+            {
+                "text": "identifikuje vysilaci zdroje",
+                "correct": false
+            },
+            {
+                "text": "popisuje prispivajici zdroje",
+                "correct": false
+            },
+            {
+                "text": "obsahuje pocet prispivajich zdroju v rozsirene hlavicce",
+                "correct": false
+            }
+        ],
+        "number": 4
+    },
+    {
+        "text": "Ktery z nasledujicich doporuceni slouzi ke kompresi videa?",
+        "answers": [
+            {
+                "text": "H.264",
+                "correct": true
+            },
+            {
+                "text": "RTSP",
+                "correct": false
+            },
+            {
+                "text": "Q.931",
+                "correct": false
+            },
+            {
+                "text": "MPEG-7",
+                "correct": false
+            },
+            {
+                "text": "H.323",
+                "correct": false
+            }
+        ],
+        "number": 5
+    },
+    {
+        "text": "Bitova rychlost recoveho koderu G.711 v kb/s je",
+        "answers": [
+            {
+                "text": "64",
+                "correct": true
+            },
+            {
+                "text": "32",
+                "correct": false
+            },
+            {
+                "text": "16",
+                "correct": false
+            },
+            {
+                "text": "96",
+                "correct": false
+            },
+            {
+                "text": "8",
+                "correct": false
+            }
+        ],
+        "number": 6
+    },
+    {
+        "text": "Odpovedi SIP s cislem 4XX",
+        "answers": [
+            {
+                "text": "znamenaji chybu na strane klienta",
+                "correct": true
+            },
+            {
+                "text": "znametaji chybu na strane serveru",
+                "correct": false
+            },
+            {
+                "text": "znamenaji presmerovani",
+                "correct": false
+            },
+            {
+                "text": "znamenaji uspech",
+                "correct": false
+            }
+        ],
+        "number": 7
+    },
+    {
+        "text": "Rozdil casu D(I) dvou po sobe jdoucich paketu prijatych prijmacem a odeslanych vysilacem, kde S(I) je casove razitko RTP paketu a R(I) je cas prichodu RTP paketu mzeme vypocitat vztahem",
+        "answers": [
+            {
+                "text": "D(I) = (R(I)-R(I-1))/(S(I)-(S(I-1))",
+                "correct": false
+            },
+            {
+                "text": "ani jedna neni zpravna",
+                "correct": true
+            },
+            {
+                "text": "D(I) = (R(I)-R(I-1))/(S(I)+(S(I-1))",
+                "correct": false
+            },
+            {
+                "text": "D(I) = (R(I)+R(I-1))/(S(I)-(S(I-1))",
+                "correct": false
+            },
+            {
+                "text": "D(I) = (R(I)+R(I-1))/(S(I)+(S(I-1))",
+                "correct": false
+            }
+        ],
+        "number": 8
+    },
+    {
+        "text": "V SIP zprave se neprenasi",
+        "answers": [
+            {
+                "text": "multimedialni data",
+                "correct": true
+            },
+            {
+                "text": "informace o moznostech jednotlivych klientu",
+                "correct": false
+            },
+            {
+                "text": "textove zpravy v pripade Instatn Messagingu",
+                "correct": false
+            },
+            {
+                "text": "informace o uzivatelich",
+                "correct": false
+            }
+        ],
+        "number": 9
+    },
+    {
+        "text": "MCU u h.323 je",
+        "answers": [
+            {
+                "text": "Multipoint Control Unit",
+                "correct": true
+            },
+            {
+                "text": "Multizone Control Unit",
+                "correct": false
+            },
+            {
+                "text": "Multimedia Conrol Unit",
+                "correct": false
+            },
+            {
+                "text": "Multicast Control Unit",
+                "correct": false
+            }
+        ],
+        "number": 10
+    },
+    {
+        "text": "Standardni hlavicka protoolu RTP obsahuje",
+        "answers": [
+            {
+                "text": "12 oktetu",
+                "correct": true
+            },
+            {
+                "text": "24 oktetu",
+                "correct": false
+            },
+            {
+                "text": "20 oktetu",
+                "correct": false
+            },
+            {
+                "text": "16 oktetu",
+                "correct": false
+            }
+        ],
+        "number": 11
+    },
+    {
+        "text": "RTSP neobsahuje zpravu (metodu)",
+        "answers": [
+            {
+                "text": "INVITE",
+                "correct": true
+            },
+            {
+                "text": "OPTION",
+                "correct": false
+            },
+            {
+                "text": "SETUP",
+                "correct": false
+            },
+            {
+                "text": "DESCRIBE",
+                "correct": false
+            }
+        ],
+        "number": 12
+    },
+    {
+        "text": "Ktera metoda SIP zprav slouzi k preposlani hovoru k jinemu ucastnikovi?",
+        "answers": [
+            {
+                "text": "REFER",
+                "correct": true
+            },
+            {
+                "text": "CANCEL",
+                "correct": false
+            },
+            {
+                "text": "DESCRIBE",
+                "correct": false
+            },
+            {
+                "text": "INVITE",
+                "correct": false
+            }
+        ],
+        "number": 13
+    },
+    {
+        "text": "Na kterou adresu se dovolam?",
+        "answers": [
+            {
+                "text": "sip_marek@147.223.69.54",
+                "correct": false
+            },
+            {
+                "text": "sip://152@147.223.69.54",
+                "correct": false
+            },
+            {
+                "text": "sip:/147.223.69.54",
+                "correct": false
+            },
+            {
+                "text": "sip:152@147.223.69.54",
+                "correct": true
+            }
+        ],
+        "number": 14
+    },
+    {
+        "text": "Mezi zakladni parametry QoS nepatri",
+        "answers": [
+            {
+                "text": "zpozdeni",
+                "correct": false
+            },
+            {
+                "text": "ztrata paketu",
+                "correct": false
+            },
+            {
+                "text": "jitter",
+                "correct": false
+            },
+            {
+                "text": "kvalita hovorove signalizace u VoIP",
+                "correct": true
+            }
+        ],
+        "number": 15
+    },
+    {
+        "text": "Jakou odpoved posila klient v pripade ze hovor zamitnete?",
+        "answers": [
+            {
+                "text": "BYE",
+                "correct": true
+            },
+            {
+                "text": "CANCEL",
+                "correct": false
+            },
+            {
+                "text": "DISCONNECT",
+                "correct": false
+            },
+            {
+                "text": "ENDCONNECT",
+                "correct": false
+            }
+        ],
+        "number": 16
+    },
+    {
+        "text": "Ktera z metod je urcena k transferu hovoru?",
+        "answers": [
+            {
+                "text": "REFER",
+                "correct": true
+            },
+            {
+                "text": "TRANSFER",
+                "correct": false
+            },
+            {
+                "text": "TRANSFER NOW",
+                "correct": false
+            },
+            {
+                "text": "RECONNECT",
+                "correct": false
+            }
+        ],
+        "number": 17
+    },
+    {
+        "text": "SIP",
+        "answers": [
+            {
+                "text": "je signalizacni protokol",
+                "correct": true
+            },
+            {
+                "text": "je starsi nazev pro VoIP",
+                "correct": false
+            },
+            {
+                "text": "je protokol pro prenos multimedialnich dat",
+                "correct": false
+            },
+            {
+                "text": "je zkratka pro Strusny Informacni Protokol",
+                "correct": false
+            }
+        ],
+        "number": 18
+    },
+    {
+        "text": "TTL(Time to Live) v IP datagramu",
+        "answers": [
+            {
+                "text": "stanovuje maximlani pocet preskoku v siti",
+                "correct": true
+            },
+            {
+                "text": "stanovuje maximalne straveny cas paketu v jedno smerovaci (v sekundach)",
+                "correct": false
+            },
+            {
+                "text": "stanovuje doba vyskytu paketu v sekundach",
+                "correct": false
+            },
+            {
+                "text": "stanovuje minimalni pocet preskoku v siti",
+                "correct": false
+            }
+        ],
+        "number": 19
+    },
+    {
+        "text": "Zprava H.225-RAS Gatekeeper Request",
+        "answers": [
+            {
+                "text": "slouzi k nalezeni gatekeeperu",
+                "correct": true
+            },
+            {
+                "text": "slouzi k rizeni pristupu",
+                "correct": false
+            },
+            {
+                "text": "slouzi k rozvazani komunikace mezi dema terminaly",
+                "correct": false
+            },
+            {
+                "text": "slouzi k ukonceni komunikace s gatekeeperem",
+                "correct": false
+            }
+        ],
+        "number": 20
+    },
+    {
+        "text": "Hlavicka IP datagramu nenese informaci o",
+        "answers": [
+            {
+                "text": "zdrojovem a cilovem portu",
+                "correct": true
+            },
+            {
+                "text": "cilove adrese",
+                "correct": false
+            },
+            {
+                "text": "fragmentu",
+                "correct": false
+            },
+            {
+                "text": "typu sluzby (ToS)",
+                "correct": false
+            },
+            {
+                "text": "zdrojove adrese",
+                "correct": false
+            }
+        ],
+        "number": 21
+    },
+    {
+        "text": "Jake zpravy musi byt vymeny pro uspesne navazani hovoru v SIP",
+        "answers": [
+            {
+                "text": "INVITE,200OK,ACK",
+                "correct": true
+            },
+            {
+                "text": "INVITE,300OK,ACK",
+                "correct": false
+            },
+            {
+                "text": "INVITE,200OK",
+                "correct": false
+            },
+            {
+                "text": "INVITE,300OK",
+                "correct": false
+            },
+            {
+                "text": "INVITE,180 Ringing,200OK",
+                "correct": false
+            }
+        ],
+        "number": 22
+    },
+    {
+        "text": "Protokol H.245 u H323",
+        "answers": [
+            {
+                "text": "signalizuje schopnsti jednotlivych terminalu",
+                "correct": true
+            },
+            {
+                "text": "signalizuje, ktery z terminalu je zapnuty a ktery vypnuty",
+                "correct": false
+            },
+            {
+                "text": "prenasi multimedialni data",
+                "correct": false
+            },
+            {
+                "text": "stara se o nalezeni gatekeeperu v siti",
+                "correct": false
+            }
+        ],
+        "number": 23
+    },
+    {
+        "text": "Pri sestavovani SIP relace",
+        "answers": [
+            {
+                "text": "je jako prvni poslana metoda INVITE",
+                "correct": true
+            },
+            {
+                "text": "je jako prvni poslana metoda REGISTER",
+                "correct": false
+            },
+            {
+                "text": "je jako prvni poslana metoda START",
+                "correct": false
+            },
+            {
+                "text": "je jako prvni poslana metoda REFER",
+                "correct": false
+            }
+        ],
+        "number": 24
+    },
+    {
+        "text": "Metoda ACK potvrzuje",
+        "answers": [
+            {
+                "text": "metodu INVITE",
+                "correct": true
+            },
+            {
+                "text": "metodu REFER",
+                "correct": false
+            },
+            {
+                "text": "metodu CANCEL",
+                "correct": false
+            },
+            {
+                "text": "metodu REINVITE",
+                "correct": false
+            }
+        ],
+        "number": 25
+    },
+    {
+        "text": "Pri vysilani na multicastovou adresu",
+        "answers": [
+            {
+                "text": "data budou prijmat puze stanice ktere jsou prihlaseny do multicastove skupiny",
+                "correct": true
+            },
+            {
+                "text": "pouziji adres u v rozsahu 192.168.1.0-255",
+                "correct": false
+            },
+            {
+                "text": "koncove stanice mohou ovladat moje vysilani",
+                "correct": false
+            },
+            {
+                "text": "urcuje vysilaci server komu data posle",
+                "correct": false
+            }
+        ],
+        "number": 26
+    },
+    {
+        "text": "Socket je",
+        "answers": [
+            {
+                "text": "IP adresa + port",
+                "correct": true
+            },
+            {
+                "text": "IP adresa + maska site",
+                "correct": false
+            },
+            {
+                "text": "IP adresa + port + maska site",
+                "correct": false
+            },
+            {
+                "text": "fyzicka adresa + port",
+                "correct": false
+            },
+            {
+                "text": "zadna odpoved neni spravna",
+                "correct": false
+            }
+        ],
+        "number": 27
+    },
+    {
+        "text": "RTCP zahrnuje zpravy",
+        "answers": [
+            {
+                "text": "Sender Report SR a Receiver Report RR",
+                "correct": true
+            },
+            {
+                "text": "pouze Receiver Report RR",
+                "correct": false
+            },
+            {
+                "text": "Receiver Describtion RDES",
+                "correct": false
+            },
+            {
+                "text": "pouze Source Describtion SDES",
+                "correct": false
+            },
+            {
+                "text": "Application Specific APP a Receiver Describtion RDES",
+                "correct": false
+            }
+        ],
+        "number": 28
+    },
+    {
+        "text": "H.323 - pri komunikaci terminalu s MCU jednotkou ridi komunikaci",
+        "answers": [
+            {
+                "text": "vzdy MCU jednotka",
+                "correct": true
+            },
+            {
+                "text": "terminal, ktery inicioval spojeni",
+                "correct": false
+            },
+            {
+                "text": "terminal nebo MCU jednotka v zavislosti na vygenerovanem cisle ve zprave MasterSlaveDetermination",
+                "correct": false
+            },
+            {
+                "text": "terminal v zavislosti na vygenerovanem cisle ve zprave MaterSlaveDetermination",
+                "correct": false
+            }
+        ],
+        "number": 29
+    },
+    {
+        "text": "Jaky port je standardne vyuzivan zpravami SIP",
+        "answers": [
+            {
+                "text": "5060",
+                "correct": true
+            },
+            {
+                "text": "1060",
+                "correct": false
+            },
+            {
+                "text": "1080",
+                "correct": false
+            },
+            {
+                "text": "5080",
+                "correct": false
+            },
+            {
+                "text": "5065",
+                "correct": false
+            }
+        ],
+        "number": 30
+    },
+    {
+        "text": "Kolik SDP se standardne vmeni mezi dvema uzivateli pri SIP volani",
+        "answers": [
+            {
+                "text": "2",
+                "correct": true
+            },
+            {
+                "text": "1",
+                "correct": false
+            },
+            {
+                "text": "3",
+                "correct": false
+            },
+            {
+                "text": "4",
+                "correct": false
+            }
+        ],
+        "number": 31
+    },
+    {
+        "text": "Co znamena zkratka DISA",
+        "answers": [
+            {
+                "text": "Direct Inward System Access",
+                "correct": true
+            },
+            {
+                "text": "DIgital System Announcment",
+                "correct": false
+            },
+            {
+                "text": "DIgital SAmple",
+                "correct": false
+            },
+            {
+                "text": "Diskretni Invariabilni Systemovy Automat",
+                "correct": false
+            }
+        ],
+        "number": 32
+    },
+    {
+        "text": "U h.323 se jednolive zarzeni domlouvaji o typu pouziteho kodeku pro komunikaci",
+        "answers": [
+            {
+                "text": "po spojeni",
+                "correct": true
+            },
+            {
+                "text": "SDP protokolem",
+                "correct": false
+            },
+            {
+                "text": "po prvnim vyslanem RTP paketu",
+                "correct": false
+            },
+            {
+                "text": "pred vlastnim spojenim",
+                "correct": false
+            }
+        ],
+        "number": 33
+    },
+    {
+        "text": "Platna multicastova adresa je",
+        "answers": [
+            {
+                "text": "239.255.1.1",
+                "correct": true
+            },
+            {
+                "text": "221.255.1.1",
+                "correct": false
+            },
+            {
+                "text": "147.229.148.38",
+                "correct": false
+            },
+            {
+                "text": "192.168.1.16",
+                "correct": false
+            },
+            {
+                "text": "147.229.148.0",
+                "correct": false
+            }
+        ],
+        "number": 34
+    },
+    {
+        "text": "Hlavicka UDP neobsahuje",
+        "answers": [
+            {
+                "text": "zdrojovou a cilovou adresu",
+                "correct": true
+            },
+            {
+                "text": "zdrojovy port",
+                "correct": false
+            },
+            {
+                "text": "cilovy port",
+                "correct": false
+            },
+            {
+                "text": "delku paketu",
+                "correct": false
+            },
+            {
+                "text": "kontrolni soucet",
+                "correct": false
+            }
+        ],
+        "number": 35
+    },
+    {
+        "text": "Jaky protokol se pouziva k prenosvu informaci o UA v SIPu?",
+        "answers": [
+            {
+                "text": "SDP",
+                "correct": true
+            },
+            {
+                "text": "SMTP",
+                "correct": false
+            },
+            {
+                "text": "SAP",
+                "correct": false
+            },
+            {
+                "text": "RTSP",
+                "correct": false
+            }
+        ],
+        "number": 36
+    },
+    {
+        "text": "Ve ktere metode SIP zprav se posilaji informace o schopnostech VoIP telefonu?",
+        "answers": [
+            {
+                "text": "INVITE",
+                "correct": true
+            },
+            {
+                "text": "DESCRIBE",
+                "correct": false
+            },
+            {
+                "text": "CANCEL",
+                "correct": false
+            },
+            {
+                "text": "CONNECT",
+                "correct": false
+            }
+        ],
+        "number": 37
+    },
+    {
+        "text": "Payload type v RTP",
+        "answers": [
+            {
+                "text": "urcuje jake kodovani je pro data prenasena v paketu pouzito",
+                "correct": true
+            },
+            {
+                "text": "obsahuje sekvenci cislo paketu",
+                "correct": false
+            },
+            {
+                "text": "ma 8 bitu",
+                "correct": false
+            },
+            {
+                "text": "ma 5 bitu",
+                "correct": false
+            },
+            {
+                "text": "ma 6 bitu",
+                "correct": false
+            },
+            {
+                "text": "obsahuje adresu zarizeni, ke kteremu ma byt paket RTP dorucen",
+                "correct": false
+            }
+        ],
+        "number": 38
+    },
+    {
+        "text": "Pocet oktetu v zahalvi RTP (bez CSRC identifikatoru) je",
+        "answers": [
+            {
+                "text": "12",
+                "correct": true
+            },
+            {
+                "text": "20",
+                "correct": false
+            },
+            {
+                "text": "16",
+                "correct": false
+            },
+            {
+                "text": "8",
+                "correct": false
+            }
+        ],
+        "number": 39
+    },
+    {
+        "text": "Standardni port pro vysilani RTSP zprav je",
+        "answers": [
+            {
+                "text": "554",
+                "correct": true
+            },
+            {
+                "text": "5060",
+                "correct": false
+            },
+            {
+                "text": "1720",
+                "correct": false
+            },
+            {
+                "text": "8080",
+                "correct": false
+            }
+        ],
+        "number": 40
+    },
+    {
+        "text": "K cemu slouzi metoda (zprava) REGISTER v SIP?",
+        "answers": [
+            {
+                "text": "vyuziva se k registraci klientu na registrar server",
+                "correct": true
+            },
+            {
+                "text": "pouziva se pro dotazani na schopnosti serveru",
+                "correct": false
+            },
+            {
+                "text": "slouzi k zahajeni spojeni s volajicim",
+                "correct": false
+            },
+            {
+                "text": "slouzi pro odpoved ze strany serveru",
+                "correct": false
+            }
+        ],
+        "number": 41
+    },
+    {
+        "text": "Real-time Transport Protocol (RTP)",
+        "answers": [
+            {
+                "text": "pracuje na aplikacni vrstve TCP/IP",
+                "correct": true
+            },
+            {
+                "text": "pracuje na relacni vrstve TCP/IP",
+                "correct": false
+            },
+            {
+                "text": "pracuje na sitove vrstve TCP/IP",
+                "correct": false
+            },
+            {
+                "text": "pracuje na fyzicke vrstve TCP/IP",
+                "correct": false
+            }
+        ],
+        "number": 42
+    },
+    {
+        "text": "K ridici signalizaci u H.323 neslouzi",
+        "answers": [
+            {
+                "text": "H.263",
+                "correct": true
+            },
+            {
+                "text": "H.245",
+                "correct": false
+            },
+            {
+                "text": "H.450",
+                "correct": false
+            },
+            {
+                "text": "H.235",
+                "correct": false
+            }
+        ],
+        "number": 43
+    },
+    {
+        "text": "Pro zajisteni rekomprese data vysilanych od vice ucastniku do jedne konference vytvorene pomoci H323 slouzi",
+        "answers": [
+            {
+                "text": "MCU",
+                "correct": true
+            },
+            {
+                "text": "MPU",
+                "correct": false
+            },
+            {
+                "text": "MCX",
+                "correct": false
+            },
+            {
+                "text": "Gatekeeper",
+                "correct": false
+            },
+            {
+                "text": "UMC",
+                "correct": false
+            },
+            {
+                "text": "Brana",
+                "correct": false
+            }
+        ],
+        "number": 44
+    },
+    {
+        "text": "Odpovedi SIP s cislem 5XX",
+        "answers": [
+            {
+                "text": "znamenaji chybu na strane serveru",
+                "correct": true
+            },
+            {
+                "text": "znamenaji chybu na strane klienta",
+                "correct": false
+            },
+            {
+                "text": "znamenaji uspech",
+                "correct": false
+            },
+            {
+                "text": "znamenaji presmerovani",
+                "correct": false
+            }
+        ],
+        "number": 45
+    },
+    {
+        "text": "Informace SDP protokolu mohou byt prenaseny v SIP zadosti",
+        "answers": [
+            {
+                "text": "INVITE",
+                "correct": true
+            },
+            {
+                "text": "TRYING",
+                "correct": false
+            },
+            {
+                "text": "BYE",
+                "correct": false
+            },
+            {
+                "text": "RINGING",
+                "correct": false
+            },
+            {
+                "text": "CALL PROCEEDING",
+                "correct": false
+            }
+        ],
+        "number": 46
+    },
+    {
+        "text": "SDP se neposila s metodou",
+        "answers": [
+            {
+                "text": "TRYING",
+                "correct": true
+            },
+            {
+                "text": "OK",
+                "correct": false
+            },
+            {
+                "text": "INVITE",
+                "correct": false
+            },
+            {
+                "text": "ACK",
+                "correct": false
+            }
+        ],
+        "number": 47
+    },
+    {
+        "text": "Standardni hlavicka protokolu RTP obsahuje",
+        "answers": [
+            {
+                "text": "12 oktetu",
+                "correct": true
+            },
+            {
+                "text": "20 oktetu",
+                "correct": false
+            },
+            {
+                "text": "24 oktetu",
+                "correct": false
+            },
+            {
+                "text": "16 oktetu",
+                "correct": false
+            }
+        ],
+        "number": 48
+    },
+    {
+        "text": "SSRC u RTP identifikuje",
+        "answers": [
+            {
+                "text": "zdroj vysilani multimedilniho toku",
+                "correct": true
+            },
+            {
+                "text": "poradi paketu v multimedialnim toku",
+                "correct": false
+            },
+            {
+                "text": "prispivajici zdroj vysilani do multimedialniho toku o vice ucastnicich",
+                "correct": false
+            },
+            {
+                "text": "cas pro prehrani multimedialniho toku",
+                "correct": false
+            }
+        ],
+        "number": 49
+    },
+    {
+        "text": "Broadcastova adresa",
+        "answers": [
+            {
+                "text": "je 127.0.0.1",
+                "correct": false
+            },
+            {
+                "text": "data jsou vysilana vybrane sikupne uzivatelu",
+                "correct": false
+            },
+            {
+                "text": "umozni posilat pakety vybrane skupine uzivatelu",
+                "correct": false
+            },
+            {
+                "text": "data jsou vysilana vsemi smery",
+                "correct": true
+            },
+            {
+                "text": "data jsou vysilana k cilove koncove stanici urcene IP adresou",
+                "correct": false
+            },
+            {
+                "text": "je 255.255.255.0",
+                "correct": false
+            },
+            {
+                "text": "je 192.168.1.0",
+                "correct": false
+            }
+        ],
+        "number": 50
+    },
+    {
+        "text": "Real-time Transport Protocol (RTP)",
+        "answers": [
+            {
+                "text": "slouzi k prenosu multimedialnich dat",
+                "correct": true
+            },
+            {
+                "text": "slouzi k prenosu dat informujicich o QoS site",
+                "correct": false
+            },
+            {
+                "text": "slouzi pro prenos souboru",
+                "correct": false
+            },
+            {
+                "text": "slouzi pro prenos zprav",
+                "correct": false
+            },
+            {
+                "text": "slouzi pro automatickou konfiguraci pocitacu pripoenych do site",
+                "correct": false
+            }
+        ],
+        "number": 51
+    },
+    {
+        "text": "Sender Report je vysilan protokolem",
+        "answers": [
+            {
+                "text": "RTCP",
+                "correct": true
+            },
+            {
+                "text": "SIP",
+                "correct": false
+            },
+            {
+                "text": "SAP",
+                "correct": false
+            },
+            {
+                "text": "RTP",
+                "correct": false
+            },
+            {
+                "text": "RTSP",
+                "correct": false
+            }
+        ],
+        "number": 52
+    },
+    {
+        "text": "Kolik zprav SIP probehne behem registrace mezi telefonem a proxy serverem",
+        "answers": [
+            {
+                "text": "3 zpravy",
+                "correct": true
+            },
+            {
+                "text": "4 zpravy",
+                "correct": false
+            },
+            {
+                "text": "2 zpravy",
+                "correct": false
+            },
+            {
+                "text": "1 zpravy",
+                "correct": false
+            }
+        ],
+        "number": 53
+    },
+    {
+        "text": "Standardni hlavicka protokolu RTP obsahuje",
+        "answers": [
+            {
+                "text": "sekvecni cislo paketu a CSRC identifikator",
+                "correct": true
+            },
+            {
+                "text": "IP adresu cilove stanice",
+                "correct": false
+            },
+            {
+                "text": "TTL a kontrolni soucet hlavicky",
+                "correct": false
+            },
+            {
+                "text": "IP adresu zdrojove stanice",
+                "correct": false
+            }
+        ],
+        "number": 54
+    },
+    {
+        "text": "Mejme dvoubodouv audiokonferenci dle standadu H.323. Kolik logickych kanalu je behem sestaveni spojeni otevreno?",
+        "answers": [
+            {
+                "text": "2",
+                "correct": true
+            },
+            {
+                "text": "1",
+                "correct": false
+            },
+            {
+                "text": "3",
+                "correct": false
+            },
+            {
+                "text": "4",
+                "correct": false
+            },
+            {
+                "text": "0",
+                "correct": false
+            }
+        ],
+        "number": 55
+    },
+    {
+        "text": "Real Time Streamng Protocol (RTSP)",
+        "answers": [
+            {
+                "text": "slouzi k ovladnai multimedialniho toku (napr. pro video na vyzadani)",
+                "correct": true
+            },
+            {
+                "text": "slouzi ke kontrole zpozdeni paketu",
+                "correct": false
+            },
+            {
+                "text": "slouzi k oznaceni paketu s malym zpozdenim",
+                "correct": false
+            },
+            {
+                "text": "slouzi pro prenos multimedialnich dat",
+                "correct": false
+            }
+        ],
+        "number": 56
+    },
+    {
+        "text": "Popis multimedialnich data m= u SDP ma vzdy tvar",
+        "answers": [
+            {
+                "text": "m=medium port protokol format",
+                "correct": true
+            },
+            {
+                "text": "m=medium protokol port format",
+                "correct": false
+            },
+            {
+                "text": "m=medium format protokol port",
+                "correct": false
+            },
+            {
+                "text": "m=medium format port protokol",
+                "correct": false
+            },
+            {
+                "text": "ani jedna neni zpravna",
+                "correct": false
+            }
+        ],
+        "number": 57
+    },
+    {
+        "text": "H.323: overeni schopnosti jednotlivych terminalu Terminal Capability Set probehne",
+        "answers": [
+            {
+                "text": "po vyjednani spojeni a zprave CONNECT",
+                "correct": true
+            },
+            {
+                "text": "ihned po registraci terminalu ke gatkeeperu",
+                "correct": false
+            },
+            {
+                "text": "ihned po zprave CALL PROCEEDING",
+                "correct": false
+            },
+            {
+                "text": "ihned po spojeni dvou terminalu",
+                "correct": false
+            }
+        ],
+        "number": 58
+    },
+    {
+        "text": "Vyberte spravne tvrzeni",
+        "answers": [
+            {
+                "text": "Manifest MPEG-DASH je jeden soubor obsahujici vsechny informace o dostupnych profilech",
+                "correct": true
+            },
+            {
+                "text": "Manifest HLS je ejden soubor obsahujici vsechny informace o dostupnych profilech",
+                "correct": false
+            },
+            {
+                "text": "Manifest HLS odkazuje na dalsi soubory obsahujici informace o danem profilu",
+                "correct": false
+            },
+            {
+                "text": "Manifest MPEG-DASH odkazuje na dalsi soubory obsahujici infromace o danem profilu",
+                "correct": false
+            },
+            {
+                "text": "Playlist MPEG-DASH je jeden soubor obsahujici vsechny informace o dostupych profilech",
+                "correct": false
+            }
+        ],
+        "number": 59
+    },
+    {
+        "text": "Ktery protokol neslouzi k signalizaci",
+        "answers": [
+            {
+                "text": "RTP",
+                "correct": true
+            },
+            {
+                "text": "H.245",
+                "correct": false
+            },
+            {
+                "text": "SIP",
+                "correct": false
+            },
+            {
+                "text": "H.225",
+                "correct": false
+            }
+        ],
+        "number": 60
+    },
+    {
+        "text": "Jakou informaci manifest (MPD) neobsahuje",
+        "answers": [
+            {
+                "text": "URL adresu zdroje",
+                "correct": true
+            },
+            {
+                "text": "casovani",
+                "correct": false
+            },
+            {
+                "text": "zabezpeceni",
+                "correct": false
+            },
+            {
+                "text": "rozliseni",
+                "correct": false
+            },
+            {
+                "text": "typ media",
+                "correct": false
+            }
+        ],
+        "number": 61
+    },
+    {
+        "text": "O smerovani se v TCP/IP stara vrstva",
+        "answers": [
+            {
+                "text": "sitova",
+                "correct": true
+            },
+            {
+                "text": "spojova",
+                "correct": false
+            },
+            {
+                "text": "transportni",
+                "correct": false
+            },
+            {
+                "text": "smerova",
+                "correct": false
+            }
+        ],
+        "number": 62
+    },
+    {
+        "text": "V jakem formatu je soubor MPD?",
+        "answers": [
+            {
+                "text": "XML",
+                "correct": true
+            },
+            {
+                "text": "HTML",
+                "correct": false
+            },
+            {
+                "text": "JSON",
+                "correct": false
+            },
+            {
+                "text": "M3U",
+                "correct": false
+            },
+            {
+                "text": "YAML",
+                "correct": false
+            }
+        ],
+        "number": 63
+    },
+    {
+        "text": "Odpovedi SIP s cislem 2XX",
+        "answers": [
+            {
+                "text": "znamenaji kladne potvrzeni",
+                "correct": true
+            },
+            {
+                "text": "znamenaji chybu na strane klienta",
+                "correct": false
+            },
+            {
+                "text": "znamenaji chybu na strane serveru",
+                "correct": false
+            },
+            {
+                "text": "znamenaji presmerovani",
+                "correct": false
+            }
+        ],
+        "number": 64
+    },
+    {
+        "text": "Pro zruseni dialgu SIP slouzi zprava (jeste pred sestavenim spojeni)",
+        "answers": [
+            {
+                "text": "CANCEL",
+                "correct": true
+            },
+            {
+                "text": "GOOD-BYE",
+                "correct": false
+            },
+            {
+                "text": "BYE",
+                "correct": false
+            },
+            {
+                "text": "BUY",
+                "correct": false
+            },
+            {
+                "text": "DESTROY",
+                "correct": false
+            }
+        ],
+        "number": 65
+    },
+    {
+        "text": "SSRC v RTP hlavicce",
+        "answers": [
+            {
+                "text": "identifikuje zdroj vysilani",
+                "correct": true
+            },
+            {
+                "text": "je prirazeno klientovi vzdalenym serverem",
+                "correct": false
+            },
+            {
+                "text": "identifikuje prispivajici zdroj v mixovanem RTP streamu",
+                "correct": false
+            },
+            {
+                "text": "slouzi k casove synchronizaci streamu",
+                "correct": false
+            }
+        ],
+        "number": 66
+    },
+    {
+        "text": "Odpovedi SIP s cislem 3XX",
+        "answers": [
+            {
+                "text": "znamenaji presmerovani",
+                "correct": true
+            },
+            {
+                "text": "znamenaji chybu na strane klienta",
+                "correct": false
+            },
+            {
+                "text": "znamenaji chybu na strane serveru",
+                "correct": false
+            },
+            {
+                "text": "znamenaji uspech",
+                "correct": false
+            },
+            {
+                "text": "jsou odvedi pouze na zadosti REDIRECT",
+                "correct": false
+            }
+        ],
+        "number": 67
+    },
+    {
+        "text": "SIP protokol je v modelu TCP/IP definovan na vrstve",
+        "answers": [
+            {
+                "text": "aplikacni",
+                "correct": true
+            },
+            {
+                "text": "transportni",
+                "correct": false
+            },
+            {
+                "text": "sitove",
+                "correct": false
+            },
+            {
+                "text": "relacni",
+                "correct": false
+            }
+        ],
+        "number": 68
+    }
+]
