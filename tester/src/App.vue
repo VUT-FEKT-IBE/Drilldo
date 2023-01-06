@@ -1,12 +1,13 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import Menu from "./components/Menu.vue";
+import { RouterView } from "vue-router";
+import MenuComponent from "./components/MenuComponent.vue";
 </script>
 
 <template>
-  <div>
-    <Menu />
-
+  <div class="app-contents">
+    <header>
+      <MenuComponent />
+    </header>
     <main>
       <RouterView />
     </main>
@@ -16,6 +17,15 @@ import Menu from "./components/Menu.vue";
 <style scoped>
 main {
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.app-contents {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 </style>

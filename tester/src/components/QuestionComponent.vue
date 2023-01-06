@@ -1,16 +1,24 @@
 <script setup>
-import Answer from "./Answer.vue";
+import { useRepo } from "pinia-orm";
+
+import AnswerModel from "../models/answer";
+import AnswerComponent from "./AnswerComponent.vue";
+
 const props = defineProps(["question"]);
 </script>
 
 <template>
   <div class="question">
     <div class="title">
-      {{ props.question.number }}. {{ props.question.text }}
+      {{ props.question.number }}. {{ props.question.question }}
     </div>
     <div class="answers">
-      <Answer v-for="answer in props.question.answers" :question="props.question" :answer="answer"
-        :key="props.number + '-' + answer.text" />
+      <AnswerComponent
+        v-for="answer in props.question.answers"
+        :questionId="props.question.id"
+        :answerId="answer.id"
+        :key="props.number + '-' + answer.text"
+      />
     </div>
   </div>
 </template>
@@ -26,11 +34,12 @@ const props = defineProps(["question"]);
 
 .title {
   display: flex;
+  padding-bottom: 15px;
   width: 100%;
 }
 
 .answers {
-  margin-top: 10px;
+  gap: 5px;
   display: flex;
   flex-direction: column;
   place-items: center;

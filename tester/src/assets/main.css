@@ -4,20 +4,57 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
+  height: inherit;
   font-weight: normal;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--blue);
   transition: 0.4s;
+}
+.button {
+  border-radius: 5px;
+  padding: 10px 10px;
+  border: 0px;
+  background-color: var(--button-background);
+  color: var(--button-text);
+  cursor: pointer;
+}
+.button.light {
+  border-radius: 5px;
+  padding: 10px 10px;
+  border: 0px;
+  background-color: var(--button-light-background);
+  color: var(--button-light-text);
+}
+.button.correct {
+  background-color: var(--button-correct-background);
+  color: var(--button-correct-text);
+}
+.button.incorrect {
+  background-color: var(--button-incorrect-background);
+  color: var(--button-incorrect-text);
+}
+.slider {
+  appearance: none;
+  background: var(--slider-background);
+  outline: none;
+  overflow: hidden;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  border-radius: 50%;
+  background: var(--light-blue);
+  cursor: pointer;
+  box-shadow: -407px 0 0 400px var(--blue);
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
   }
 }
 
@@ -28,8 +65,6 @@ a,
   }
 
   #app {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 0 2rem;
   }

@@ -1,3 +1,10 @@
+<script setup>
+import { useViewerStore } from "@/stores/viewer";
+
+const store = useViewerStore();
+store.showMobileMenu = false;
+</script>
+
 <template>
   <div class="about">
     <h1>FEKT Tester</h1>
