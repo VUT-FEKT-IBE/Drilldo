@@ -1,6 +1,5 @@
 <script setup>
 import UploadJsonComponent from "../components/UploadJsonComponent.vue";
-import DataFile from "../components/DataFile.vue";
 import QuestionModel from "../models/question";
 import AnswerModel from "../models/answer";
 import { useRepo } from "pinia-orm";
@@ -44,23 +43,13 @@ function getStats(stats) {
 <template>
   <div class="loader-container">
     <h1>Uploading your test data</h1>
-    <div>
-      <div v-if="questionRepo.all().length === 0">
-        <p>Select already created questions:</p>
-        <DataFile @data="getData" name="paragraf 4" filename="paragraf4.json" />
-        <DataFile @data="getData" name="zsg" filename="zsg.json" />
-        <DataFile @data="getData" name="mds zkouska" filename="mds-zkouska.json" />
-        <DataFile @data="getData" name="mds zapocet" filename="mds-zapocet.json" />
-      </div>
-    </div>
-
     <div class="but-par">
       <p v-if="questionRepo.all().length === 0">
         First you need to upload your questions:
       </p>
       <UploadJsonComponent
         @data="getData"
-        uploadThing="Questions"
+        buttonText="Load Questions"
         v-if="questionRepo.all().length === 0"
       />
     </div>
@@ -70,8 +59,10 @@ function getStats(stats) {
           (Optional) You can also upload statistics from a prior session to
           allow question shuffle to prefer questions where you make mistakes.
         </p>
-        <UploadJsonComponent @data="getStats" uploadThing="Statistics" />
+        <UploadJsonComponent @data="getStats" buttonText="Load statistics" />
       </div>
+    </div>
+    <div class="navigator">
       <div class="but-par" :class="{ offset: !store.statsLoaded }">
         <p class="explore text">Explore questions to revise your knowledge:</p>
         <button class="explore button" @click="$router.push('/explore')">
@@ -84,20 +75,20 @@ function getStats(stats) {
           <span class="but-text">Start testing</span>
         </button>
       </div>
-      <div class="but-par offset">
-        <p class="reset text">
-          If you want to clear all questions, click this button:
-        </p>
-        <button
-          class="reset button"
-          @click="
-            questionRepo.flush();
-            answerRepo.flush();
-          "
-        >
-          <span class="but-text">Reset questions</span>
-        </button>
-      </div>
+    </div>
+    <div class="but-par offset">
+      <p class="reset text">
+        If you want to clear all questions, click this button:
+      </p>
+      <button
+        class="reset button"
+        @click="
+          questionRepo.flush();
+          answerRepo.flush();
+        "
+      >
+        <span class="but-text">Reset questions</span>
+      </button>
     </div>
   </div>
 </template>
@@ -115,7 +106,6 @@ h1 {
   margin-top: 5px;
 }
 .button {
-  display: flex;
   width: 100%;
 }
 
