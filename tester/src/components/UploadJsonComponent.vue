@@ -1,6 +1,6 @@
 <script setup>
 const emit = defineEmits(["data"]);
-const props = defineProps(["uploadThing"]);
+const props = defineProps(["buttonText"]);
 
 function chooseFiles() {
   document.getElementById("fileUpload").click();
@@ -29,16 +29,13 @@ function onFileUpload($event) {
   <div>
     <input id="fileUpload" type="file" @change="onFileUpload($event)" hidden />
     <button class="file-upload button" @click="chooseFiles()">
-      <span class="but-text">Select {{ props.uploadThing }}</span>
+      <span class="but-text">{{ props.buttonText }}</span>
     </button>
   </div>
 </template>
 
 <style scoped>
 .button {
-  display: flex;
-  border-radius: 5px;
-  padding: 10px 20px;
   width: 100%;
 }
 </style>

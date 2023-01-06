@@ -1,0 +1,98 @@
+<script setup>
+import { useRepo } from "pinia-orm";
+import { useViewerStore } from "@/stores/viewer";
+
+import UploadJsonComponent from "../components/UploadJsonComponent.vue";
+import DataFile from "../components/DataFile.vue";
+import QuestionModel from "../models/question";
+import AnswerModel from "../models/answer";
+
+const questionRepo = useRepo(QuestionModel);
+const answerRepo = useRepo(AnswerModel);
+const store = useViewerStore();
+
+function fetchData(data) {
+  questionRepo.flush();
+  answerRepo.flush();
+  data.forEach(function (item) {
+    let maxScore = 0;
+    item.answers.forEach(function (answer) {
+      if (answer.correct) {
+        maxScore++;
+      }
+    });
+    questionRepo.save({
+      number: item.number,
+      question: item.question,
+      maxScore: maxScore,
+      answers: item.answers,
+    });
+  });
+}
+function getStats(stats) {
+  if (stats.length != questionRepo.all().length) {
+    console.error("Error loading stats: Number of questions doesn't match");
+  }
+  stats.forEach(function (item) {
+    questionRepo
+      .where("number", item.number)
+      .update({ numCorrect: item.numCorrect, numIncorrect: item.numIncorrect });
+  });
+  store.statsLoaded = true;
+}
+</script>
+
+<template>
+  <div class="premade-tests">
+    <h3>Select from pre-made question sets:</h3>
+    <div class="data-buttons">
+      <DataFile
+        @data="fetchData"
+        name="FEKT Paragraf 4"
+        filename="paragraf4.json"
+      />
+      <DataFile @data="fetchData" name="BPC-ZSG" filename="zsg.json" />
+      <DataFile
+        @data="fetchData"
+        name="BPC-MDS zkouška"
+        filename="mds-zkouska.json"
+      />
+      <DataFile
+        @data="fetchData"
+        name="BPC-MDS zápočet"
+        filename="mds-zapocet.json"
+      />
+    </div>
+    <div
+      class="questions-loaded offset"
+      v-if="questionRepo.all().length > 0 && !store.statsLoaded"
+    >
+      <h4>Optionally load test statistics that you downloaded earlier</h4>
+      <UploadJsonComponent @data="getStats" buttonText="Load statistics" />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.premade-tests {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+.offset {
+  padding-top: 10px;
+}
+h3 {
+  padding-bottom: 10px;
+}
+.button {
+  width: 100%;
+}
+.data-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+</style>
