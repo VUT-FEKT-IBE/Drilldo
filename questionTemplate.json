@@ -1,7 +1,7 @@
 [
   {
     "number": 1,
-    "text": "Rozdělení EZ podle napětí mezi vodiči v uzemněné střídavé soustavě je:",
+    "question": "Rozdělení EZ podle napětí mezi vodiči v uzemněné střídavé soustavě je:",
     "answers": [
       {
         "text": "mn do 25 V; nn do 500 V; vn do 52 kV",
@@ -19,7 +19,7 @@
   },
   {
     "number": 2,
-    "text": "Vyberte pravdivá tvrzení o čtverečníku",
+    "question": "Vyberte pravdivá tvrzení o čtverečníku",
     "answers": [
       {
         "text": "Mezislovní mezery mají v průměru velikost třetiny čtverečníku",
@@ -45,7 +45,7 @@
   },
   {
     "number": 3,
-    "text": "Ktery z nasledujicich doporuceni slouzi ke kompresi videa?",
+    "question": "Ktery z nasledujicich doporuceni slouzi ke kompresi videa?",
     "answers": [
       {
         "text": "H.264",

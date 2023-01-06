@@ -1,5 +1,6 @@
 <script setup>
 import UploadJsonComponent from "../components/UploadJsonComponent.vue";
+import DataFile from "../components/DataFile.vue";
 import QuestionModel from "../models/question";
 import AnswerModel from "../models/answer";
 import { useRepo } from "pinia-orm";
@@ -43,6 +44,16 @@ function getStats(stats) {
 <template>
   <div class="loader-container">
     <h1>Uploading your test data</h1>
+    <div>
+      <div v-if="questionRepo.all().length === 0">
+        <p>Select already created questions:</p>
+        <DataFile @data="getData" name="paragraf 4" filename="paragraf4.json" />
+        <DataFile @data="getData" name="zsg" filename="zsg.json" />
+        <DataFile @data="getData" name="mds zkouska" filename="mds-zkouska.json" />
+        <DataFile @data="getData" name="mds zapocet" filename="mds-zapocet.json" />
+      </div>
+    </div>
+
     <div class="but-par">
       <p v-if="questionRepo.all().length === 0">
         First you need to upload your questions:

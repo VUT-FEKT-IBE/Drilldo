@@ -2,7 +2,6 @@
 import { ref } from "vue";
 
 import UploadFile from "../components/UploadFile.vue";
-import DataFile from "./DataFile.vue";
 
 const emit = defineEmits(["data"]);
 const questions = ref(null);
@@ -65,16 +64,6 @@ function startTesting(view = false) {
 </script>
 
 <template>
-  <div>
-    <h1>Questions</h1>
-    <div class="stat-upload">
-      <p>Select already created questions</p>
-      <DataFile @data="getData" name="paragraf4" filename="paragraf4.json" />
-      <DataFile @data="getData" name="zsg" filename="zsg.json" />
-      <DataFile @data="getData" name="mds zkouska" filename="mds-zkouska.json" />
-      <DataFile @data="getData" name="mds zapocet" filename="mds-zapocet.json" />
-    </div>
-  </div>
   <div>
     <h1>Uploading your test data</h1>
     <div v-if="questions == null" class="stat-upload">
