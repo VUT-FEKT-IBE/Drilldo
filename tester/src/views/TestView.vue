@@ -67,25 +67,30 @@ function testSetup() {
     });
   }
 
-  // keep only the desired number of answers in each question
-  if (maxAnswerNumber.value > 0) {
-    questions.forEach(function (question) {
-      let maxScore = 0;
-      question.answers.sort((a, b) => {
-        return Math.random() > 0.5 ? 1 : -1;
-      });
-      question.answers.length = maxAnswerNumber.value;
-      question.answers.forEach(function (answer) {
-        if (answer.correct) {
-          maxScore++;
-        }
-      });
-      questionRepo.save({
-        id: question.id,
-        maxScore: maxScore,
-      });
+  questions.forEach(function (question) {
+    let maxScore = 0;
+    question.answers.sort((a, b) => {
+      return Math.random() > 0.5 ? 1 : -1;
     });
-  }
+
+    // keep only the desired number of answers in each question
+    if (
+      maxAnswerNumber.value > 0 &&
+      maxAnswerNumber.value <= question.answers.length
+    ) {
+      question.answers.length = maxAnswerNumber.value;
+    }
+
+    question.answers.forEach(function (answer) {
+      if (answer.correct) {
+        maxScore++;
+      }
+    });
+    questionRepo.save({
+      id: question.id,
+      maxScore: maxScore,
+    });
+  });
 
   store.questions = questions;
   testReady.value = !testReady.value;

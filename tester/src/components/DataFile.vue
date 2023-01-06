@@ -4,14 +4,13 @@ const props = defineProps(["name", "filename"]);
 
 function onTestSelect() {
   fetch(
-    "https://raw.githubusercontent.com/VUT-FEKT-IBE/FEKT-tester/main/docs/data/" +
+    "https://raw.githubusercontent.com/VUT-FEKT-IBE/FEKT-tester/main/data/" +
       props.filename
   )
     .then(function (response) {
       return response.json();
     })
     .then(function (json) {
-      console.log(json);
       emit("data", json);
     })
     .catch(function (err) {
