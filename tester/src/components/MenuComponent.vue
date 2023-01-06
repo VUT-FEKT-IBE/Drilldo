@@ -119,12 +119,12 @@ const { showMobileMenu } = storeToRefs(store);
     margin-right: 10px;
     width: 28px;
     height: 28px;
-    fill: var(--burger-fill-open);
+    fill: var(--burger-fill);
   }
-  .open-menu .burger-icon {
+  .open-menu .burger-container .burger-icon {
     opacity: 1;
     margin-right: 0px;
-    fill: var(--burger-fill);
+    fill: var(--burger-fill-open);
   }
 }
 </style>

@@ -48,6 +48,9 @@
   --menu-background: var(--dark-background);
   --menu-text: var(--light-blue);
 
+  --burger-fill: var(--dark-background);
+  --burger-fill-open: var(--white);
+
   --section-gap: 160px;
 }
 
@@ -56,8 +59,8 @@
     --color-background: var(--dark-background);
     --color-text: var(--white);
     --slider-background: var(--very-dark-blue);
-    --burger-fill: var(--dark-background);
-    --burger-fill-open: var(--white);
+    --burger-fill: var(--white);
+    --burger-fill-open: var(--dark-background);
     --menu-background: var(--light-blue);
     --menu-text: var(--dark-background);
   }
