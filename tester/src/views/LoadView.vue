@@ -62,7 +62,7 @@ function getStats(stats) {
         <UploadJsonComponent @data="getStats" buttonText="Load statistics" />
       </div>
     </div>
-    <div class="navigator">
+    <div class="navigator" v-if="questionRepo.all().length >= 1">
       <div class="but-par" :class="{ offset: !store.statsLoaded }">
         <p class="explore text">Explore questions to revise your knowledge:</p>
         <button class="explore button" @click="$router.push('/explore')">
@@ -76,7 +76,7 @@ function getStats(stats) {
         </button>
       </div>
     </div>
-    <div class="but-par offset">
+    <div class="but-par offset" v-if="questionRepo.all().length >= 1">
       <p class="reset text">
         If you want to clear all questions, click this button:
       </p>
