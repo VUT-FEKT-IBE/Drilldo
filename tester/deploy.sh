@@ -7,17 +7,25 @@ set -e
 npm run build
 
 # navigate into the build output directory
-cd ..
+cd ../docs
 
 # place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
+
+# dirty hack to get rid of 404s for router pages
+pages=("load" "explore" "test" "edit" "about")
+for page in ${pages[@]}
+do
+  echo $page
+  mkdir $page
+  ln -s ../index.html ./$page/index.html
+done
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
 git checkout -B main
 git add -A
-git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
