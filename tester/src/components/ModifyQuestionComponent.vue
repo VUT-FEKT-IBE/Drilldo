@@ -17,7 +17,12 @@ store.editQuestion = store.questions[store.index];
 const { editQuestion } = storeToRefs(store);
 
 function validateQuestionNumber() {
-  const originalNumber = questionRepo.find(editQuestion.value.id).number;
+  let originalNumber = -1;
+  if (questionRepo.find(editQuestion.value.id) == null) {
+    originalNumber = Math.max(...questionRepo.all().map((o) => o.number)) + 1;
+  } else {
+    originalNumber = questionRepo.find(editQuestion.value.id).number;
+  }
   const existingQuestion = questionRepo
     .where("number", Number(editQuestion.value.number))
     .first();

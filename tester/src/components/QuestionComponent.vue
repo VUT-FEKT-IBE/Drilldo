@@ -9,6 +9,9 @@ const props = defineProps(["question"]);
     <div class="title">
       {{ props.question.number }}. {{ props.question.question }}
     </div>
+    <div class="image">
+      <img v-bind:src="'data:image/jpeg;base64,' + props.question.image" />
+    </div>
     <div class="answers">
       <AnswerComponent
         v-for="answer in props.question.answers"
