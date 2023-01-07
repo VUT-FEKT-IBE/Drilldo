@@ -3,7 +3,7 @@ const emit = defineEmits(["data"]);
 const props = defineProps(["name", "filename"]);
 
 function onTestSelect() {
-  fetch("/data/" + props.filename)
+  fetch("/Drilldo/data/" + props.filename)
     .then(function (response) {
       return response.json();
     })
