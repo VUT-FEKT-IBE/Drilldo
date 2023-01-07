@@ -6,7 +6,7 @@ export default class AnswerModel extends Model {
     return {
       id: this.uid(),
       questionId: this.attr(null),
-      text: this.string(" "),
+      text: this.string(""),
       correct: this.boolean(false),
       isSelected: this.boolean(false),
     };

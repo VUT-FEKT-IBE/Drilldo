@@ -78,7 +78,12 @@ console.log(editQuestion);
     <div class="question-data">
       <div class="question-title">
         <input type="number" name="number" v-model="editQuestion.number" />
-        <input type="text" name="title" v-model="editQuestion.question" />
+        <input
+          type="text"
+          name="title"
+          v-model="editQuestion.question"
+          placeholder="Question title"
+        />
       </div>
       <div class="question-image">
         <input
@@ -100,7 +105,7 @@ console.log(editQuestion);
         </button>
       </div>
     </div>
-    <div class="image" v-if="editQuestion.image !== ' '">
+    <div class="image" v-if="editQuestion.image !== ''">
       <img v-bind:src="editQuestion.image" />
     </div>
     <div class="answers">

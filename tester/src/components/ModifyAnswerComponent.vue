@@ -26,7 +26,7 @@ function deleteAnswer() {
       type="textbox"
       name="title"
       v-model="editQuestion.answers.find((x) => x.id === props.answerId).text"
-      placeholder="edit me"
+      placeholder="Answer text"
     />
     <div class="correct-selection">
       <span>Correct</span>
