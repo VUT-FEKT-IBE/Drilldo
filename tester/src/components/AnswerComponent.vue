@@ -43,10 +43,9 @@ function toggleSelection() {
 
 <template>
   <button
-    class="button"
+    class="button light"
     v-bind:class="{
       selected: answerRepo.find(props.answerId).isSelected,
-      light: !answerRepo.find(props.answerId).isSelected,
     }"
     v-if="!questionRepo.find(props.questionId).showResults"
     @click="toggleSelection()"
@@ -54,17 +53,13 @@ function toggleSelection() {
     <span class="but-text">{{ answer.text }}</span>
   </button>
   <button
-    class="button"
+    class="button light"
     v-bind:class="{
-      light: !answerRepo.find(props.answerId).isSelected,
-      green:
-        answerRepo.find(props.answerId).correct &&
+      selected: answerRepo.find(props.answerId).isSelected,
+      correct: answerRepo.find(props.answerId).correct,
+      incorrect:
+        !answerRepo.find(props.answerId).correct &&
         answerRepo.find(props.answerId).isSelected,
-      red:
-        (answerRepo.find(props.answerId).correct &&
-          !answerRepo.find(props.answerId).isSelected) ||
-        (!answerRepo.find(props.answerId).correct &&
-          answerRepo.find(props.answerId).isSelected),
     }"
     v-else-if="!viewMode"
     @click="toggleSelection()"
@@ -72,10 +67,9 @@ function toggleSelection() {
   >
     <span class="but-text">{{ answer.text }}</span></button
   ><button
-    class="button"
+    class="button light"
     v-bind:class="{
       correct: answerRepo.find(props.answerId).correct,
-      light: !answerRepo.find(props.answerId).correct,
     }"
     v-else
     @click="toggleSelection()"
@@ -89,5 +83,16 @@ function toggleSelection() {
 .button {
   width: 100%;
   text-align: center;
+}
+.button.selected span {
+  font-weight: 900;
+}
+.button.correct {
+  background-color: var(--green);
+  color: var(--white);
+}
+.button.incorrect {
+  background-color: var(--red);
+  color: var(--white);
 }
 </style>
