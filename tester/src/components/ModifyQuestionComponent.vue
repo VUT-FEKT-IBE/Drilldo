@@ -17,8 +17,17 @@ store.editQuestion = store.questions[store.index];
 const { editQuestion } = storeToRefs(store);
 
 function validateQuestionNumber() {
+  const originalNumber = questionRepo.find(editQuestion.value.id).number;
+  const existingQuestion = questionRepo
+    .where("number", Number(editQuestion.value.number))
+    .first();
+
   if (editQuestion.value.number < 1) {
-    editQuestion.value.number = 1;
+    if (questionRepo.where("number", 1).first() === null) {
+      editQuestion.value.number = 1;
+    }
+  } else if (existingQuestion !== null) {
+    editQuestion.value.number = originalNumber;
   }
 }
 function addAnswer() {
@@ -27,6 +36,7 @@ function addAnswer() {
   );
 }
 function saveQuestion() {
+  validateQuestionNumber();
   answerRepo.where("questionId", props.questionId).delete();
   questionRepo.save(editQuestion.value);
 }
@@ -35,12 +45,7 @@ function saveQuestion() {
 <template>
   <div class="question">
     <div class="question-data">
-      <input
-        type="number"
-        name="number"
-        v-model="editQuestion.number"
-        @input="validateQuestionNumber()"
-      />
+      <input type="number" name="number" v-model="editQuestion.number" />
       <input type="text" name="title" v-model="editQuestion.question" />
     </div>
     <div class="answers">
