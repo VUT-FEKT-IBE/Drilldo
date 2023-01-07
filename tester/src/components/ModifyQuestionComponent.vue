@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import { useRepo } from "pinia-orm";
 import { useViewerStore } from "@/stores/viewer";
 import { storeToRefs } from "pinia";
