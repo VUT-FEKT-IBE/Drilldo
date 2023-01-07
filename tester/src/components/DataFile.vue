@@ -3,10 +3,7 @@ const emit = defineEmits(["data"]);
 const props = defineProps(["name", "filename"]);
 
 function onTestSelect() {
-  fetch(
-    "https://raw.githubusercontent.com/VUT-FEKT-IBE/FEKT-tester/main/data/" +
-      props.filename
-  )
+  fetch("/data/" + props.filename)
     .then(function (response) {
       return response.json();
     })

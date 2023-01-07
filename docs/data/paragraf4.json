@@ -1,0 +1,1316 @@
+[
+  {
+    "number": 1,
+    "question": "Rozdělení EZ podle napětí mezi vodiči v uzemněné střídavé soustavě je: ",
+    "answers": [
+      {
+        "text": "mn do 230V; nn do 24 kV; vn do 52 kV",
+        "correct": false
+      },
+      {
+        "text": "mn do 25 V; nn do 500 V; vn do 52 kV",
+        "correct": false
+      },
+      {
+        "text": "mn do 50 V; nn do 1000 V; vn do 52 kV",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "question": "Jmenovité napětí střídavých rozvodných sítí v ČR je:",
+    "answers": [
+      {
+        "text": "12/24 V",
+        "correct": false
+      },
+      {
+        "text": "120/300 V",
+        "correct": false
+      },
+      {
+        "text": "230/400 V",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "question": "Mez bezpečných jmenovitých napětí při předpokládaném dotyku neživých částí v prostorech normálních je:",
+    "answers": [
+      {
+        "text": "25 V~ a 120 V=",
+        "correct": false
+      },
+      {
+        "text": "50 V~ a 120 V=",
+        "correct": true
+      },
+      {
+        "text": "60 V~ a 60 V=",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "question": "Dovolené meze trvalého dotykového napětí v prostředí suchém pro EZ do 1000 V jsou:",
+    "answers": [
+      {
+        "text": "12 V~ a 24 V=",
+        "correct": false
+      },
+      {
+        "text": "25 V~ a 60 V=",
+        "correct": true
+      },
+      {
+        "text": "50 V~ a 120 V=",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "question": "Odpor uzemnění uzlu zdroje nemá být větší než:",
+    "answers": [
+      {
+        "text": "10 Ω, ve ztížených podmínkách nejvýše 15 Ω",
+        "correct": false
+      },
+      {
+        "text": "15 Ω, ve ztížených podmínkách nejvýše 5 Ω",
+        "correct": false
+      },
+      {
+        "text": "5 Ω, ve ztížených podmínkách nejvýše 15 Ω",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "question": "Plynové potrubí se jako náhodný ochranný vodič:",
+    "answers": [
+      {
+        "text": "Musí použít",
+        "correct": false
+      },
+      {
+        "text": "Může použít",
+        "correct": false
+      },
+      {
+        "text": "Nesmí použít",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "question": "Silnoproudá zařízení jsou zařízení:",
+    "answers": [
+      {
+        "text": "Kde proud protékající přesahuje 2,5A~ a 5A=",
+        "correct": false
+      },
+      {
+        "text": "Kde proud protékající přesahuje 5A~ a 10A=",
+        "correct": false
+      },
+      {
+        "text": "U nichž mohou vzniknout proudy nebezpečné osobám, zvířatům a věcem",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "question": "Obecná charakteristika prostorů nebezpečných říká, že:",
+    "answers": [
+      {
+        "text": "Jsou zde tabulky zákazu a výstrahy",
+        "correct": false
+      },
+      {
+        "text": "Vlivem prostředí je zde stálé nebo přechodné nebezpečí úrazu elektrickým proudem",
+        "correct": true
+      },
+      {
+        "text": "Živé části jsou volně přístupné laikům",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "question": "Z hlediska možného zvýšení rizika úrazu elektrickým proudem působením vnějších vlivů se prostory člení na:",
+    "answers": [
+      {
+        "text": "bezpečné a nebezpečné",
+        "correct": false
+      },
+      {
+        "text": "normální a nebezpečné",
+        "correct": false
+      },
+      {
+        "text": "normální, nebezpečné a zvlášť nebezpečné",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "question": "Barva bezpečnostních tabulek výstrahy je:",
+    "answers": [
+      {
+        "text": "Oranžová",
+        "correct": false
+      },
+      {
+        "text": "Červená",
+        "correct": false
+      },
+      {
+        "text": "Žlutá",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "question": "Barva bezpečnostních tabulek zákazu je:",
+    "answers": [
+      {
+        "text": "Černá",
+        "correct": false
+      },
+      {
+        "text": "Červená",
+        "correct": true
+      },
+      {
+        "text": "Žlutá",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "question": "Bezpečnostní značka v provedení modrý kruh, bílý symbol je značka:",
+    "answers": [
+      {
+        "text": "Příkazu",
+        "correct": true
+      },
+      {
+        "text": "Výstrahy",
+        "correct": false
+      },
+      {
+        "text": "Zákazu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "question": "Bezpečnostní značky v provedení na zeleném podkladu jsou značky:",
+    "answers": [
+      {
+        "text": "Informační",
+        "correct": true
+      },
+      {
+        "text": "Příkazu",
+        "correct": false
+      },
+      {
+        "text": "Zákazu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "question": "V označení stupně krytí IP udává první číslice:",
+    "answers": [
+      {
+        "text": "Stupeň ochrany osob před nebezpečným dotykem živých částí a stupeň ochrany zařízení před vniknutím cizích pevných těles",
+        "correct": true
+      },
+      {
+        "text": "Stupeň ochrany před vlhkostí, vody a korozí",
+        "correct": false
+      },
+      {
+        "text": "Stupeň ochrany před vniknutí bez kíče či nástroje",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "question": "Prostředky základní ochrany (před přímým dotykem) EZ zajišťují ochranu:",
+    "answers": [
+      {
+        "text": "Jen při normálním provozu",
+        "correct": true
+      },
+      {
+        "text": "Vždy",
+        "correct": false
+      },
+      {
+        "text": "Základní i při poruše",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "question": "Prostředky zvýšené ochrany (před přímým i nepřímým dotykem) EZ zajišťují ochranu:",
+    "answers": [
+      {
+        "text": "Vždy",
+        "correct": false
+      },
+      {
+        "text": "Základní i pokročilou",
+        "correct": false
+      },
+      {
+        "text": "Základní i při poruše",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "question": "Při ochraně automatickým odpojením se pro střídavé rozvodné sítě do 1000 V dovoluje doba odpojení:",
+    "answers": [
+      {
+        "text": "nepřesahující 0.5 s",
+        "correct": false
+      },
+      {
+        "text": "nepřesahující 2 s",
+        "correct": false
+      },
+      {
+        "text": "nepřesahující 5 s",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "question": "Doplňkovou ochranu proudovým chráničem lze realizovat:",
+    "answers": [
+      {
+        "text": "chráničem s napětím nejvýše 230V",
+        "correct": false
+      },
+      {
+        "text": "chráničem se jmenovitým rozdílovým proudem nejvýše 10 mA",
+        "correct": false
+      },
+      {
+        "text": "chráničem se jmenovitým rozdílovým proudem nejvýše 30 mA",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "question": "Při základní ochraně krytím musí kryty:",
+    "answers": [
+      {
+        "text": "Být dostatečně odolné, vyhovující alespoň IPxxB (IP2X), horní vodorovné kryty pak IPxxD (IP4X), odstranitelné jen klíčem či nástrojem",
+        "correct": true
+      },
+      {
+        "text": "Být dostatečně odolné, vyhovující alespoň IPxxB (IP4X), horní vodorovné kryty pak IPxxD (IP2X), odstranitelné jen klíčem či nástrojem",
+        "correct": false
+      },
+      {
+        "text": "Být voděodolné, odstranitelné jen klíčem či nástrojem",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "question": "Ochranu zábranou v prostorech volně přístupných laikům:",
+    "answers": [
+      {
+        "text": "Musí se použít",
+        "correct": false
+      },
+      {
+        "text": "Nelze použít",
+        "correct": true
+      },
+      {
+        "text": "V ČR lze použít",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "question": "Napětí obvodů při ochranně elektrickým oddělením nesmí přesáhnout hodnotu:",
+    "answers": [
+      {
+        "text": "230 V",
+        "correct": false
+      },
+      {
+        "text": "400 V",
+        "correct": false
+      },
+      {
+        "text": "500 V",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "question": "Základní ochrana polohou spočívá:",
+    "answers": [
+      {
+        "text": "V umístění živých částí do prostorů přístupným pouze pracovníků znalých",
+        "correct": false
+      },
+      {
+        "text": "V umístění živých částí mimo dosah",
+        "correct": true
+      },
+      {
+        "text": "V umístění živých částí více než 2,5 m od sebe",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "question": "Doplňkovou ochranu proudovým chráničem lze realizovat:",
+    "answers": [
+      {
+        "text": "Chráničem se jmenovitým rozdílovým proudem nejvýše 3 mA",
+        "correct": false
+      },
+      {
+        "text": "Chráničem se jmenovitým rozdílovým proudem nejvýše 30 mA",
+        "correct": true
+      },
+      {
+        "text": "Chráničem se jmenovitým rozdílovým proudem nejvýše 300 mA",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "question": "Pro ochranu omezením ustáleného dotykového proudu a náboje nesmí proud tekoucí odporem 2000 Ohmů mezi částmi současně přístupnými dotyku překročit hodnoty:",
+    "answers": [
+      {
+        "text": "10 mA~ nebo 20 mA=",
+        "correct": false
+      },
+      {
+        "text": "10 mA~ nebo 3,5 mA=",
+        "correct": false
+      },
+      {
+        "text": "3,5 mA~ nebo 10 mA=",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "question": "Pro ochranu omezením ustáleného proudu a energie nesmí nahromaděná energie mezi částmi současně přístupnými dotyku překročit hodnotu:",
+    "answers": [
+      {
+        "text": "0,5 mJ",
+        "correct": true
+      },
+      {
+        "text": "5 mJ",
+        "correct": false
+      },
+      {
+        "text": "50 mJ",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 26,
+    "question": "Proudovým chráničem musí procházet:",
+    "answers": [
+      {
+        "text": "Pouze ochranný vodič",
+        "correct": false
+      },
+      {
+        "text": "Pouze zemnící vodič",
+        "correct": false
+      },
+      {
+        "text": "Všechny pracovní vodiče",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 27,
+    "question": "Vidlice a zásuvky pro obvody SELV musí splňovat tyto požadavky:",
+    "answers": [
+      {
+        "text": "Nesmí být záměnné s vidlicemi a zásuvkami sítí jiných napětí a musí mít kontakt pro ochranný vodič",
+        "correct": false
+      },
+      {
+        "text": "Nesmí být záměnné s vidlicemi a zásuvkami sítí jiných napětí a může mít kontakt pro ochranný vodič",
+        "correct": false
+      },
+      {
+        "text": "Nesmí být záměnné s vidlicemi a zásuvkami sítí jiných napětí a nesmí mít kontakt pro ochranný vodič",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 28,
+    "question": "Živé části obvodů PELV s napětím nepřesahujícím 12V~ nebo 25V=:",
+    "answers": [
+      {
+        "text": "Musí mít základní ochranu",
+        "correct": false
+      },
+      {
+        "text": "Nemusí mít ochranný vodič",
+        "correct": false
+      },
+      {
+        "text": "Nemusí mít základní ochranu",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 29,
+    "question": "Jako zdroje pro ochranu malým napětím lze použít:",
+    "answers": [
+      {
+        "text": "Bezpečnostní ochranný transformátor, akumulátor",
+        "correct": true
+      },
+      {
+        "text": "Ochranu polohou",
+        "correct": false
+      },
+      {
+        "text": "Základní ochranu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 30,
+    "question": "Obvody SELV:",
+    "answers": [
+      {
+        "text": "Jsou uzemněné",
+        "correct": false
+      },
+      {
+        "text": "Musí být spojeny se zemí",
+        "correct": false
+      },
+      {
+        "text": "Nesmí být spojeny se zemí",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 31,
+    "question": "Z označení PELV vyplývá, že jde o obvody:",
+    "answers": [
+      {
+        "text": "Bezpečné",
+        "correct": false
+      },
+      {
+        "text": "Neuzemněné",
+        "correct": false
+      },
+      {
+        "text": "Uzemněné",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 32,
+    "question": "Ochrana základní izolací znamená, že:",
+    "answers": [
+      {
+        "text": "Živé části musí být mimo dosah laiků",
+        "correct": false
+      },
+      {
+        "text": "Živé části musí být úplně pokryty izolací, kterou lze odstranit pouze jejím zničením",
+        "correct": true
+      },
+      {
+        "text": "Živé části musí mít snadně odstranitelnou izolaci",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 33,
+    "question": "Zařízení mající dvojitou či zesílenou izolaci se označují jako:",
+    "answers": [
+      {
+        "text": "EZ třídy ochrany I",
+        "correct": false
+      },
+      {
+        "text": "EZ třídy ochrany II",
+        "correct": true
+      },
+      {
+        "text": "EZ třídy ochrany III",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 34,
+    "question": "Elektrické zařízení třídy ochrany II:",
+    "answers": [
+      {
+        "text": "Má dvojitou či zesílenou izolaci a nemá svorku pro připojení ochranného vodiče",
+        "correct": true
+      },
+      {
+        "text": "Má ochranu základní i při poruše",
+        "correct": false
+      },
+      {
+        "text": "Má pouze základní ochranu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 35,
+    "question": "Elektrické zařízení, u něhož je provedena jen pracovní izolace, se považuje z hlediska možného úrazu elektrickým proudem za zařízení:",
+    "answers": [
+      {
+        "text": "Bez ochrany",
+        "correct": true
+      },
+      {
+        "text": "Bezpečné",
+        "correct": false
+      },
+      {
+        "text": "Se základní ochranou",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 36,
+    "question": "V sítích TT se neživé části EZ:",
+    "answers": [
+      {
+        "text": "Musí připojit na nulový vodič",
+        "correct": false
+      },
+      {
+        "text": "Nesmějí připojit na nulový vodič",
+        "correct": true
+      },
+      {
+        "text": "Nesmějí připojit na ochranný vodič",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 37,
+    "question": "Elektrická zařízení třídy ochrany II musí mít připojovací vidlici:",
+    "answers": [
+      {
+        "text": "Bez ochranného vodiče",
+        "correct": true
+      },
+      {
+        "text": "Mimo dosah laiků",
+        "correct": false
+      },
+      {
+        "text": "S ochranného vodiče",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 38,
+    "question": "Elektrická zařízení třídy ochrany 0:",
+    "answers": [
+      {
+        "text": "Lze použít pouze na území VUT FEKT",
+        "correct": false
+      },
+      {
+        "text": "Lze v ČR používat",
+        "correct": false
+      },
+      {
+        "text": "Nelze v ČR používat",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 39,
+    "question": "Izolace, která slouží k ochraně při poruše (před nepřímým dotykem) se nazývá:",
+    "answers": [
+      {
+        "text": "Přídavná",
+        "correct": true
+      },
+      {
+        "text": "Vylepšená",
+        "correct": false
+      },
+      {
+        "text": "Základní",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 40,
+    "question": "Pro připojení elektrických předmětů třídy ochrany I se dvouvodičový pohyblivý přívod s vidlicí bez ochranného kontaktu:",
+    "answers": [
+      {
+        "text": "Musí použít",
+        "correct": false
+      },
+      {
+        "text": "Může použít",
+        "correct": false
+      },
+      {
+        "text": "Nesmí použít",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 41,
+    "question": "Jednofázový pohyblivý prodlužovací přívod pro obecné použití se provede jako:",
+    "answers": [
+      {
+        "text": "Třížilový, přičemž ochranný vodič je veden s ostatními",
+        "correct": false
+      },
+      {
+        "text": "Třížilový, přičemž ochranný vodič je veden samostatně a musí být spojen s nulovým vodičem",
+        "correct": false
+      },
+      {
+        "text": "Třížilový, přičemž ochranný vodič je veden samostatně a nesmí být spojen s nulovým vodičem",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 42,
+    "question": "Barva izolovaných krajních (fázových) vodičů může být:",
+    "answers": [
+      {
+        "text": "Černá, hnědá nebo šedá",
+        "correct": true
+      },
+      {
+        "text": "Černá, zelená nebo modrá",
+        "correct": false
+      },
+      {
+        "text": "Černá, červená nebo modrá",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 43,
+    "question": "Fázové svorky elektrických předmětů a zařízení se ve střídavé rozvodné soustavě označují písmeny:",
+    "answers": [
+      {
+        "text": "I, U, R",
+        "correct": false
+      },
+      {
+        "text": "K, L, M",
+        "correct": false
+      },
+      {
+        "text": "U, V, W",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 44,
+    "question": "Nulový (střední) vodič střídavé soustavy se označuje:",
+    "answers": [
+      {
+        "text": "L",
+        "correct": false
+      },
+      {
+        "text": "N",
+        "correct": true
+      },
+      {
+        "text": "S",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 45,
+    "question": "Svorka ochranného vodiče se na elektrickém předmětu značí:",
+    "answers": [
+      {
+        "text": "N",
+        "correct": false
+      },
+      {
+        "text": "PE",
+        "correct": true
+      },
+      {
+        "text": "PEN",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 46,
+    "question": "Vodič PEN je:",
+    "answers": [
+      {
+        "text": "Vodič slučující funkci ochranného vodič a nulového vodiče",
+        "correct": true
+      },
+      {
+        "text": "Vodič slučující funkci pracovních vodičů a nulového vodiče",
+        "correct": false
+      },
+      {
+        "text": "Vodič slučující funkci pracovních vodičů a ochranného vodiče",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 47,
+    "question": "Jištění vodičů PE a PEN:",
+    "answers": [
+      {
+        "text": "Je nutností",
+        "correct": false
+      },
+      {
+        "text": "Je povoleno",
+        "correct": false
+      },
+      {
+        "text": "Je zakázáno",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 48,
+    "question": "Obsluha je taková činnost na EZ, kdy:",
+    "answers": [
+      {
+        "text": "Pracovník nepoužívá nástrojů a nemůže přijít do styku s živými částmi",
+        "correct": true
+      },
+      {
+        "text": "Pracovník nepoužívá nástrojů, ale může přijít do styku s živými částmi",
+        "correct": false
+      },
+      {
+        "text": "Pracovník používá nástrojů a nemůže přijít do styku s živými částmi",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 49,
+    "question": "Práce je taková činnost na EZ, kdy:",
+    "answers": [
+      {
+        "text": "Pracovník nepoužívá nástrojů a může přijít do styku s živými částmi",
+        "correct": false
+      },
+      {
+        "text": "Pracovník nepoužívá nástrojů, ale může přijít do styku s živými částmi",
+        "correct": false
+      },
+      {
+        "text": "Pracovník používá nástrojů a může přijít do styku s živými částmi",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 50,
+    "question": "§4 Vyhlášky 50/1978 Sb. stanovuje požadavky pro kvalifikaci:",
+    "answers": [
+      {
+        "text": "Pracovníků poučených",
+        "correct": true
+      },
+      {
+        "text": "Pracovníků pro samostatnou činnost",
+        "correct": false
+      },
+      {
+        "text": "Pracovníků znalých",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 51,
+    "question": "§5 Vyhlášky 50/1978 Sb. stanovuje požadavky pro kvalifikaci:",
+    "answers": [
+      {
+        "text": "Pracovníků poučených",
+        "correct": false
+      },
+      {
+        "text": "Pracovníků pro samostatnou činnost",
+        "correct": false
+      },
+      {
+        "text": "Pracovníků znalých",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 52,
+    "question": "Pracovníci poučení mohou na EZ pracovat:",
+    "answers": [
+      {
+        "text": "V blízkosti nekrytých částí EZ nn pod napětím ve vzdálenosti větší než 20 cm pod dozorem",
+        "correct": false
+      },
+      {
+        "text": "V blízkosti nekrytých částí EZ nn pod napětím ve vzdálenosti větší než 20 cm s dohledem",
+        "correct": true
+      },
+      {
+        "text": "V blízkosti nekrytých částí EZ nn pod napětím ve vzdálenosti větší než 80 cm s dohledem",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 53,
+    "question": "Při práci pod dozorem odpovídá za dodržování bezpečnostních předpisů:",
+    "answers": [
+      {
+        "text": "Pracovník dozírající",
+        "correct": true
+      },
+      {
+        "text": "Pracovník provádějící činnost",
+        "correct": false
+      },
+      {
+        "text": "Pracovník znalý",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 54,
+    "question": "Při práci s dohledem odpovídá za dodržování bezpečnostních předpisů:",
+    "answers": [
+      {
+        "text": "Pracovník dozírající",
+        "correct": false
+      },
+      {
+        "text": "Pracovník provádějící činnost",
+        "correct": true
+      },
+      {
+        "text": "Pracovník znalý",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 55,
+    "question": "Pro následky úrazu elektrickým proudem je rozhodující:",
+    "answers": [
+      {
+        "text": "Velikost napětí, který protéká tělem zasaženého",
+        "correct": false
+      },
+      {
+        "text": "Velikost proudu, který protéká tělem zasaženého",
+        "correct": true
+      },
+      {
+        "text": "Čas, po který proud protékal tělem zasaženého",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 56,
+    "question": "Za současně přístupné dotyku se považují části navzájem vzdálené:",
+    "answers": [
+      {
+        "text": "Méně než 1,5 m",
+        "correct": false
+      },
+      {
+        "text": "Méně než 2 m",
+        "correct": false
+      },
+      {
+        "text": "Méně než 2,5 m",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 57,
+    "question": "Pracovními pomůckami jsou například:",
+    "answers": [
+      {
+        "text": "Měřicí přístroje, zkoušečky napětí a další předměty potřebné k práci či obsluze EZ",
+        "correct": true
+      },
+      {
+        "text": "Ochranné izolační rukavice, izolační koberce a plošiny, ochranné brýle apod.",
+        "correct": false
+      },
+      {
+        "text": "Suché oblečení",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 58,
+    "question": "Ochrannými pomůckami jsou například:",
+    "answers": [
+      {
+        "text": "Měřicí přístroje, zkoušečky napětí a další předměty potřebné k práci či obsluze EZ",
+        "correct": false
+      },
+      {
+        "text": "Náhradní pojistky",
+        "correct": false
+      },
+      {
+        "text": "Ochranné izolační rukavice, izolační koberce a plošiny, ochranné brýle apod.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 59,
+    "question": "Před použitím ochranných pomůcek je pracovník povinen:",
+    "answers": [
+      {
+        "text": "Přesvědčit se o jejich původu",
+        "correct": false
+      },
+      {
+        "text": "Přesvědčit se o jejich stáří",
+        "correct": false
+      },
+      {
+        "text": "Přesvědčit se o jejich řádném stavu",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 60,
+    "question": "Nepřímá srdeční masáž má být prováděna s frekvencí asi:",
+    "answers": [
+      {
+        "text": "100 stlačení za minutu",
+        "correct": true
+      },
+      {
+        "text": "50 stlačení za minutu",
+        "correct": false
+      },
+      {
+        "text": "80 stlačení za minutu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 61,
+    "question": "Před započetím nepřímé srdeční masáže je potřeba:",
+    "answers": [
+      {
+        "text": "Uložit postiženého rovně na záda na nerovnou a pevnou podložku",
+        "correct": false
+      },
+      {
+        "text": "Uložit postiženého rovně na záda na rovnou a měkkou podložku",
+        "correct": false
+      },
+      {
+        "text": "Uložit postiženého rovně na záda na rovnou a pevnou podložku",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 62,
+    "question": "Při provádění nepřímé srdeční masáže musí mít zachránce:",
+    "answers": [
+      {
+        "text": "Obě ruce napnuté v loktech",
+        "correct": true
+      },
+      {
+        "text": "Pokrčené ruce v loktech",
+        "correct": false
+      },
+      {
+        "text": "Čistý trestní rejstřík",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 63,
+    "question": "Při provádění nepřímé srdeční masáže je nutno stlačovat hrudní kost u dospělého člověka:",
+    "answers": [
+      {
+        "text": "Do hloubky 1-2 cm",
+        "correct": false
+      },
+      {
+        "text": "Do hloubky 4-5 cm",
+        "correct": true
+      },
+      {
+        "text": "Do hloubky 8-10 cm",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 64,
+    "question": "Pokud postižený po úrazu elektrickým proudem dýchá a má hmatný tep, zůstává při vědomí a není viditelně zraněn:",
+    "answers": [
+      {
+        "text": "Je nutno přesto zavolat lékařskou pomoc",
+        "correct": true
+      },
+      {
+        "text": "Může a nemusí být přivolaná lékařskou pomoc",
+        "correct": false
+      },
+      {
+        "text": "Není nutno zavolat lékařskou pomoc",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 65,
+    "question": "Záchrannou lékařskou službu je možné přivolat tísňovým telefonním číslem:",
+    "answers": [
+      {
+        "text": "150",
+        "correct": false
+      },
+      {
+        "text": "155",
+        "correct": true
+      },
+      {
+        "text": "158",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 66,
+    "question": "Jestliže postižený nabyl po resuscitaci vědomí:",
+    "answers": [
+      {
+        "text": "Musí být nadále sledován a musí zůstat vleže",
+        "correct": true
+      },
+      {
+        "text": "Musí být nadále sledován, ale může se postavit na nohy",
+        "correct": false
+      },
+      {
+        "text": "Nesmí být sledován a může sám odejít",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 67,
+    "question": "Resuscitace se musí provádět:",
+    "answers": [
+      {
+        "text": "Dokud se neobnoví životní funkce nebo do předání postiženého do péče záchranářů",
+        "correct": true
+      },
+      {
+        "text": "Po dobu 10 minut",
+        "correct": false
+      },
+      {
+        "text": "Po dobu 5 minut",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 68,
+    "question": "Poměr stlačení srdce a umělého dýchání při resuscitaci má být:",
+    "answers": [
+      {
+        "text": "20 stlačení a 2 vdechy",
+        "correct": false
+      },
+      {
+        "text": "30 stlačení a 2 vdechy",
+        "correct": true
+      },
+      {
+        "text": "30 stlačení a 3 vdechy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 69,
+    "question": "Pro automatické odpojení od zdroje v síti TT 230 V AC, zajišťující ochranu před nepřímým dotykem koncového obvodu do 32 A, musí ochranný prvek vypnout v čase do:",
+    "answers": [
+      {
+        "text": "0.2 s",
+        "correct": true
+      },
+      {
+        "text": "1 s",
+        "correct": false
+      },
+      {
+        "text": "2 s",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 70,
+    "question": "Pro automatické odpojení od zdroje v síti TN 230 V AC, zajišťující ochranu před nepřímým dotykem koncového obvodu do 32 A, musí ochranný prvek vypnout v čase do:",
+    "answers": [
+      {
+        "text": "0.2 s",
+        "correct": false
+      },
+      {
+        "text": "0.4 s",
+        "correct": true
+      },
+      {
+        "text": "1 s",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 71,
+    "question": "Proudové chrániče s rozdílovým proudem do 30 mA se musí požít na:",
+    "answers": [
+      {
+        "text": "Zásuvky se jmenovitým proudem do 16 A, které jsou používány laiky",
+        "correct": false
+      },
+      {
+        "text": "Zásuvky se jmenovitým proudem do 32 A, které jsou používány laiky",
+        "correct": true
+      },
+      {
+        "text": "Zásuvky se jmenovitým proudem do 64 A, které jsou používány laiky",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "number": 72,
+    "question": "Automatický externí defibrilátor použijeme v případě:",
+    "answers": [
+      {
+        "text": "Když postižený neodpovídá",
+        "correct": false
+      },
+      {
+        "text": "Omdlení postiženého",
+        "correct": false
+      },
+      {
+        "text": "Zástavy dechu postiženého",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "number": 73,
+    "question": "Automatický externí defibrilátor použijeme v případě:",
+    "answers": [
+      {
+        "text": "Když postižený neodpovídá",
+        "correct": false
+      },
+      {
+        "text": "Omdlení postiženého",
+        "correct": false
+      },
+      {
+        "text": "Zástavy dechu postiženého",
+        "correct": true
+      }
+    ]
+  }
+]
