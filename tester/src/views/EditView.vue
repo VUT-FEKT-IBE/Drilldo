@@ -6,7 +6,6 @@ import { storeToRefs } from "pinia";
 import QuestionModel from "../models/question";
 import ModifyQuestionComponent from "../components/ModifyQuestionComponent.vue";
 import QuestionControlComponent from "../components/QuestionControlComponent.vue";
-import router from "../router/index";
 
 const questionRepo = useRepo(QuestionModel);
 const store = useViewerStore();

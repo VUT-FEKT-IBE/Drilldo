@@ -33,7 +33,8 @@ if (questionRepo.all().length === 0) {
 function testSetup() {
   const questions = questionRepo.with("answers").get();
   if (!weightedSorting.value) {
-    questions.sort((a, b) => {
+    // eslint-disable-next-line no-unused-vars
+    questions.sort((_a, _b) => {
       return Math.random() > 0.5 ? 1 : -1;
     });
   } else {
@@ -63,14 +64,16 @@ function testSetup() {
   // keep only the desired number of questions (from the start)
   if (questionNumber.value >= 0) {
     questions.length = questionNumber.value;
-    questions.sort((a, b) => {
+    // eslint-disable-next-line no-unused-vars
+    questions.sort((_a, _b) => {
       return Math.random() > 0.5 ? 1 : -1;
     });
   }
 
   questions.forEach(function (question) {
     let maxScore = 0;
-    question.answers.sort((a, b) => {
+    // eslint-disable-next-line no-unused-vars
+    questions.sort((_a, _b) => {
       return Math.random() > 0.5 ? 1 : -1;
     });
 

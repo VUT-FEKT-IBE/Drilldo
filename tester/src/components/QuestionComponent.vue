@@ -1,7 +1,4 @@
 <script setup>
-import { useRepo } from "pinia-orm";
-
-import AnswerModel from "../models/answer";
 import AnswerComponent from "./AnswerComponent.vue";
 
 const props = defineProps(["question"]);
