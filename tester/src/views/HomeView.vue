@@ -12,7 +12,7 @@ store.showMobileMenu = false;
 </script>
 
 <template>
-  <div class="app">
+  <div class="home">
     <div class="load-route">
       <h3>Load your questions here:</h3>
       <button class="explore button" @click="$router.push('/load')">
@@ -21,7 +21,7 @@ store.showMobileMenu = false;
     </div>
     <BuiltInTestsComponent />
     <div class="navigator offset" v-if="questionRepo.all().length">
-      <div class="but-par" :class="{ offset: !store.statsLoaded }">
+      <div class="but-par">
         <p class="explore text">Explore questions to revise your knowledge:</p>
         <button class="explore button" @click="$router.push('/explore')">
           <span class="but-text">Explore questions</span>
@@ -39,35 +39,32 @@ store.showMobileMenu = false;
 </template>
 
 <style scoped>
-.app {
+.home {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 500px;
   place-items: center;
-  padding: 25px;
+  gap: 15px;
 }
 .load-route {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 500px;
-  padding-bottom: 25px;
 }
 .navigator {
   width: 100%;
-  max-width: 500px;
 }
 .offset {
-  padding-top: 25px;
+  padding-top: 10px;
 }
 .button {
   width: 100%;
 }
+h1 {
+  width: 100%;
+}
 h3 {
   padding-bottom: 10px;
-}
-p {
-  width: 100%;
-  max-width: 600px;
 }
 </style>

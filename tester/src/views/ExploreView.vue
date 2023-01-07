@@ -27,20 +27,28 @@ if (questionRepo.all().length === 0) {
 </script>
 
 <template>
-  <div class="explore-container">
-    <QuestionComponent
-      v-if="questions.length >= 1"
-      :question="questions[index]"
-      :key="questions[index].id"
-    />
-    <QuestionControlComponent />
+  <div class="explore">
+    <h1>Explore questions</h1>
+    <div class="explore-container">
+      <QuestionComponent
+        v-if="questions.length >= 1"
+        :question="questions[index]"
+        :key="questions[index].id"
+      />
+      <QuestionControlComponent />
+    </div>
   </div>
 </template>
 
 <style scoped>
-.explore-container {
-  max-width: 600px;
+.explore {
   width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.explore-container {
   height: 100%;
   display: flex;
   flex-direction: column;

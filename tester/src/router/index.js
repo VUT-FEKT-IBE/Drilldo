@@ -10,7 +10,7 @@ const router = createRouter({
       name: "home",
       component: HomeView,
       meta: {
-        title: "FEKT Tester",
+        title: "Drilldo",
       },
     },
     {
@@ -21,7 +21,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/LoadView.vue"),
       meta: {
-        title: "FEKT Tester | Load",
+        title: "Drilldo | Load",
       },
     },
     {
@@ -32,7 +32,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/ExploreView.vue"),
       meta: {
-        title: "FEKT Tester | Explore",
+        title: "Drilldo | Explore",
       },
     },
     {
@@ -43,7 +43,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/TestView.vue"),
       meta: {
-        title: "FEKT Tester | Test",
+        title: "Drilldo | Test",
       },
     },
     {
@@ -54,7 +54,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/EditView.vue"),
       meta: {
-        title: "FEKT Tester | Edit",
+        title: "Drilldo | Edit",
       },
     },
     {
@@ -65,7 +65,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/AboutView.vue"),
       meta: {
-        title: "FEKT Tester | About",
+        title: "Drilldo | About",
       },
     },
   ],

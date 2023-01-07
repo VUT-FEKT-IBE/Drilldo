@@ -25,7 +25,6 @@ const props = defineProps(["question"]);
   display: flex;
   flex-direction: column;
   place-items: center;
-  padding-top: 20px;
   width: 100%;
 }
 

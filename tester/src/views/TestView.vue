@@ -147,13 +147,16 @@ function validateAnswerNumber() {
         <span class="but-text">Start</span>
       </button>
     </div>
-    <div class="test-container" v-else>
-      <QuestionComponent
-        v-if="questions.length >= 1"
-        :question="questions[index]"
-        :key="questions[index].id"
-      />
-      <QuestionControlComponent />
+    <div class="test" v-else>
+      <h1>Testing your knowledge</h1>
+      <div class="test-container">
+        <QuestionComponent
+          v-if="questions.length >= 1"
+          :question="questions[index]"
+          :key="questions[index].id"
+        />
+        <QuestionControlComponent />
+      </div>
     </div>
   </div>
 </template>
@@ -168,6 +171,13 @@ function validateAnswerNumber() {
   justify-content: space-between;
   gap: 30px;
 }
+.test {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .test-container {
   max-width: 600px;
   width: 100%;
@@ -181,7 +191,6 @@ function validateAnswerNumber() {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 25px;
 }
 .form {
   display: flex;

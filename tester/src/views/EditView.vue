@@ -78,31 +78,42 @@ function downloadString(text, fileType, fileName) {
 </script>
 
 <template>
-  <div class="explore-container">
-    <ModifyQuestionComponent
-      v-if="store.questions.length >= 1"
-      :questionId="questions[index].id"
-      :key="questions[index].id"
-    />
-    <div class="edit-controls">
-      <div class="question-buttons">
-        <button class="button red" @click="deleteQuestion()">
-          <span class="but-text">Delete question</span>
-        </button>
-        <button class="button" @click="downloadQuestions()">
-          <span class="but-text">Download questions</span>
-        </button>
-        <button class="button green" @click="addQuestion()">
-          <span class="but-text">Add question</span>
-        </button>
+  <div class="edit">
+    <h1>Edit question sets</h1>
+    <div class="edit-container">
+      <ModifyQuestionComponent
+        v-if="store.questions.length >= 1"
+        :questionId="questions[index].id"
+        :key="questions[index].id"
+      />
+      <div class="edit-controls">
+        <div class="question-buttons">
+          <button class="button red" @click="deleteQuestion()">
+            <span class="but-text">Delete question</span>
+          </button>
+          <button class="button" @click="downloadQuestions()">
+            <span class="but-text">Download questions</span>
+          </button>
+          <button class="button green" @click="addQuestion()">
+            <span class="but-text">Add question</span>
+          </button>
+        </div>
+        <QuestionControlComponent />
       </div>
-      <QuestionControlComponent />
     </div>
   </div>
 </template>
 
 <style scoped>
-.explore-container {
+.edit {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-container {
   max-width: 600px;
   width: 100%;
   height: 100%;

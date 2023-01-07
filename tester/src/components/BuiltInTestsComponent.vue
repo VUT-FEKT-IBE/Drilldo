@@ -67,7 +67,6 @@ function getStats(stats) {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 500px;
 }
 .offset {
   padding-top: 10px;
