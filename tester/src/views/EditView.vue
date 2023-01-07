@@ -51,6 +51,7 @@ function downloadQuestions() {
     questions[index] = {
       number: item.number,
       question: item.question,
+      image: item.image,
       answers: item.answers,
     };
   });

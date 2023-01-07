@@ -7,7 +7,8 @@ export default class QuestionModel extends Model {
     return {
       id: this.uid(),
       number: this.number(1),
-      question: this.string(" "),
+      question: this.string(""),
+      image: this.string(""),
       answers: this.hasMany(AnswerModel, "questionId"),
       showResults: this.boolean(false),
       numCorrect: this.number(0),

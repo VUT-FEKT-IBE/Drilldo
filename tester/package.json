@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "compressorjs": "^1.1.1",
     "pinia": "^2.0.28",
     "pinia-orm": "^1.4.0",
     "vue": "^3.2.45",

@@ -16,7 +16,6 @@ echo > .nojekyll
 pages=("load" "explore" "test" "edit" "about")
 for page in ${pages[@]}
 do
-  echo $page
   mkdir $page
   ln -s ../index.html ./$page/index.html
 done

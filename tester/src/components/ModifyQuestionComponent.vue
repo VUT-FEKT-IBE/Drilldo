@@ -1,7 +1,9 @@
 <script setup>
+import { ref } from "vue";
 import { useRepo } from "pinia-orm";
 import { useViewerStore } from "@/stores/viewer";
 import { storeToRefs } from "pinia";
+import Compressor from "compressorjs";
 
 import ModifyAnswerComponent from "./ModifyAnswerComponent.vue";
 import QuestionModel from "../models/question";
@@ -16,6 +18,9 @@ store.editQuestion = store.questions[store.index];
 
 const { editQuestion } = storeToRefs(store);
 
+function chooseFiles() {
+  document.getElementById("fileUpload").click();
+}
 function validateQuestionNumber() {
   let originalNumber = -1;
   if (questionRepo.find(editQuestion.value.id) == null) {
@@ -45,13 +50,59 @@ function saveQuestion() {
   answerRepo.where("questionId", props.questionId).delete();
   questionRepo.save(editQuestion.value);
 }
+function handleImageUpload(event) {
+  if (event.target.files[0] !== undefined) {
+    const file = event.target.files[0];
+    new Compressor(file, {
+      maxWidth: 600,
+      convertSize: 100000,
+      convertTypes: ["image/png", "image/webp"],
+      success(result) {
+        var reader = new FileReader();
+        reader.readAsDataURL(result);
+        reader.onloadend = function () {
+          var base64data = reader.result;
+          editQuestion.value.image = base64data;
+        };
+      },
+      error(err) {
+        console.log(err.message);
+      },
+    });
+  }
+}
+console.log(editQuestion);
 </script>
 
 <template>
   <div class="question">
     <div class="question-data">
-      <input type="number" name="number" v-model="editQuestion.number" />
-      <input type="text" name="title" v-model="editQuestion.question" />
+      <div class="question-title">
+        <input type="number" name="number" v-model="editQuestion.number" />
+        <input type="text" name="title" v-model="editQuestion.question" />
+      </div>
+      <div class="question-image">
+        <input
+          id="fileUpload"
+          type="file"
+          accept="image/*"
+          @change="handleImageUpload($event)"
+          hidden
+        />
+        <button class="image-upload button" @click="chooseFiles()">
+          <span class="but-text">Upload image</span>
+        </button>
+        <button
+          class="image-upload button red"
+          @click="editQuestion.image = ''"
+          v-if="editQuestion.image !== ''"
+        >
+          <span class="but-text">Delete image</span>
+        </button>
+      </div>
+    </div>
+    <div class="image" v-if="editQuestion.image !== ' '">
+      <img v-bind:src="editQuestion.image" />
     </div>
     <div class="answers">
       <ModifyAnswerComponent
@@ -104,10 +155,21 @@ function saveQuestion() {
 }
 .question-data {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.question-title {
+  display: flex;
   flex-direction: row;
   width: 100%;
 }
-.question-data input[type="number"] {
+.question-image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+}
+.question-title input[type="number"] {
   display: flex;
   flex-direction: row;
   margin: 10px;
@@ -119,7 +181,7 @@ function saveQuestion() {
   padding: 5px 5px;
   border: 1px solid var(--color-text);
 }
-.question-data input[type="text"] {
+.question-title input[type="text"] {
   display: flex;
   flex-direction: row;
   margin: 10px;

@@ -22,6 +22,7 @@ function getData(data) {
     questionRepo.save({
       number: item.number,
       question: item.question,
+      image: item.image,
       maxScore: maxScore,
       answers: item.answers,
     });
