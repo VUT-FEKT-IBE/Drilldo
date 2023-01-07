@@ -28,11 +28,11 @@ a {
   background-color: var(--button-light-background);
   color: var(--button-light-text);
 }
-.button.correct {
+.button.green {
   background-color: var(--button-correct-background);
   color: var(--button-correct-text);
 }
-.button.incorrect {
+.button.red {
   background-color: var(--button-incorrect-background);
   color: var(--button-incorrect-text);
 }

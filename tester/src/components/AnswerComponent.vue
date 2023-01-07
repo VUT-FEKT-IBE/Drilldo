@@ -14,7 +14,6 @@ const props = defineProps(["questionId", "answerId"]);
 const store = useViewerStore();
 const { viewMode } = storeToRefs(store);
 const answer = ref(answerRepo.where("id", props.answerId).first());
-const question = ref(questionRepo.where("id", props.questionId).first());
 
 function toggleSelection() {
   answerRepo.save({
@@ -58,10 +57,10 @@ function toggleSelection() {
     class="button"
     v-bind:class="{
       light: !answerRepo.find(props.answerId).isSelected,
-      correct:
+      green:
         answerRepo.find(props.answerId).correct &&
         answerRepo.find(props.answerId).isSelected,
-      incorrect:
+      red:
         (answerRepo.find(props.answerId).correct &&
           !answerRepo.find(props.answerId).isSelected) ||
         (!answerRepo.find(props.answerId).correct &&
@@ -90,17 +89,5 @@ function toggleSelection() {
 .button {
   width: 100%;
   text-align: center;
-}
-.button.selected {
-  background-color: #0077b6;
-  color: white;
-}
-.button.correct {
-  background-color: #2a9d8f;
-  color: white;
-}
-.button.incorrect {
-  background-color: #e76f51;
-  color: white;
 }
 </style>
