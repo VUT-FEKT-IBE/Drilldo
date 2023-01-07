@@ -51,17 +51,6 @@ function getStats(stats) {
         name="FEKT Paragraf 4"
         filename="paragraf4.json"
       />
-      <DataFile @data="fetchData" name="BPC-ZSG" filename="zsg.json" />
-      <DataFile
-        @data="fetchData"
-        name="BPC-MDS zkouška"
-        filename="mds-zkouska.json"
-      />
-      <DataFile
-        @data="fetchData"
-        name="BPC-MDS zápočet"
-        filename="mds-zapocet.json"
-      />
     </div>
     <div
       class="questions-loaded offset"
