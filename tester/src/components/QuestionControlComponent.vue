@@ -3,7 +3,6 @@ import { useRepo } from "pinia-orm";
 import { useViewerStore } from "@/stores/viewer";
 import { storeToRefs } from "pinia";
 
-import router from "../router/index";
 import QuestionModel from "../models/question";
 
 const questionRepo = useRepo(QuestionModel);
@@ -11,11 +10,9 @@ const store = useViewerStore();
 
 const { index } = storeToRefs(store);
 const { viewMode } = storeToRefs(store);
+const { editMode } = storeToRefs(store);
 const { questions } = storeToRefs(store);
 
-if (questionRepo.all().length === 0) {
-  router.push("/");
-}
 function showRes() {
   const questionId = questions.value[index.value].id;
   questionRepo.save({
@@ -83,7 +80,7 @@ function downloadString(text, fileType, fileName) {
 <template>
   <div class="question-control">
     <div class="controls-container">
-      <button class="button" @click="previous()">
+      <button class="button" @click="previous()" v-if="!editMode">
         <span class="but-text">Previous</span>
       </button>
       <div class="slider-container">
@@ -94,17 +91,17 @@ function downloadString(text, fileType, fileName) {
           :max="questions.length - 1"
           step="1"
           v-model="store.index"
-          :disabled="!store.viewMode"
+          :disabled="!store.viewMode && !store.editMode"
         />
         <div class="slider-index">
           {{ 1 + Number(index) }}/{{ questions.length }}
         </div>
       </div>
-      <button class="button" @click="next()">
+      <button class="button" @click="next()" v-if="!editMode">
         <span class="but-text">Next</span>
       </button>
     </div>
-    <div class="data-container" v-if="!viewMode">
+    <div class="data-container" v-if="!viewMode && !editMode">
       <button
         class="button data"
         @click="showRes()"

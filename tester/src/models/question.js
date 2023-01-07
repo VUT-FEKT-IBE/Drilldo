@@ -6,8 +6,8 @@ export default class QuestionModel extends Model {
   static fields() {
     return {
       id: this.uid(),
-      number: this.number(0),
-      question: this.string(""),
+      number: this.number(1),
+      question: this.string(" "),
       answers: this.hasMany(AnswerModel, "questionId"),
       showResults: this.boolean(false),
       numCorrect: this.number(0),

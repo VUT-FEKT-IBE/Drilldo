@@ -17,6 +17,7 @@ questionRepo.where("showResults", true).update({ showResults: false });
 store.index = 0;
 store.showMobileMenu = false;
 store.viewMode = false;
+store.editMode = false;
 const { index } = storeToRefs(store);
 const { questions } = storeToRefs(store);
 
