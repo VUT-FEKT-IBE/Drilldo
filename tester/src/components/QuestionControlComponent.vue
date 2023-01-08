@@ -1,9 +1,12 @@
 <script setup>
+import { nextTick } from "vue";
 import { useRepo } from "pinia-orm";
 import { useViewerStore } from "@/stores/viewer";
 import { storeToRefs } from "pinia";
 
 import QuestionModel from "../models/question";
+
+const MathJax = window.MathJax;
 
 const questionRepo = useRepo(QuestionModel);
 const store = useViewerStore();
@@ -13,7 +16,7 @@ const { viewMode } = storeToRefs(store);
 const { editMode } = storeToRefs(store);
 const { questions } = storeToRefs(store);
 
-function showRes() {
+async function showRes() {
   const questionId = questions.value[index.value].id;
   questionRepo.save({
     id: questionId,
@@ -35,14 +38,18 @@ function showRes() {
       });
     }
   }
+  await nextTick();
+  MathJax.typeset();
 }
-function next() {
+async function next() {
   const questionId = questions.value[index.value].id;
   if (!questionRepo.find(questionId).showResults) {
     showRes();
   } else {
     store.next();
   }
+  await nextTick();
+  MathJax.typeset();
 }
 function previous() {
   store.previous();

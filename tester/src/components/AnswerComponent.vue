@@ -81,11 +81,14 @@ function toggleSelection() {
 
 <style scoped>
 .button {
-  width: 100%;
+  width: 95%;
   text-align: center;
 }
 .button.selected span {
   font-weight: 900;
+}
+.button.selected {
+  width: 100%;
 }
 .button.correct {
   background-color: var(--green);
