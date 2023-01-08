@@ -9,7 +9,6 @@ export default defineConfig({
   plugins: [
     vue(),
     VitePWA({
-      registerType: "autoUpdate",
       base: "/Drilldo/",
       manifest: {
         name: "Drilldo",
@@ -56,6 +55,10 @@ export default defineConfig({
             sizes: "48x48",
           },
         ],
+      },
+      includeAssets: "data/*.json",
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
       },
     }),
   ],
