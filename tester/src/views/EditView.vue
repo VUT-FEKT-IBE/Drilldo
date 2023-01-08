@@ -81,6 +81,10 @@ function downloadString(text, fileType, fileName) {
 <template>
   <div class="edit">
     <h1>Edit question sets</h1>
+    <p class="note">
+      NOTE: Remember to save each question you modify or your changes will be
+      lost.
+    </p>
     <div class="edit-container">
       <ModifyQuestionComponent
         v-if="store.questions.length >= 1"
@@ -112,6 +116,10 @@ function downloadString(text, fileType, fileName) {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.edit .note {
+  font-style: italic;
 }
 
 .edit-container {
