@@ -11,4 +11,7 @@ export default class AnswerModel extends Model {
       isSelected: this.boolean(false),
     };
   }
+  static piniaOptions = {
+    persist: true,
+  };
 }

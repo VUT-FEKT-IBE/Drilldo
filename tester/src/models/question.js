@@ -17,4 +17,7 @@ export default class QuestionModel extends Model {
       score: this.number(0),
     };
   }
+  static piniaOptions = {
+    persist: true,
+  };
 }
