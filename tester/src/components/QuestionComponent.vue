@@ -36,6 +36,12 @@ onMounted(() => {
   width: 100%;
   gap: 15px;
 }
+.image {
+  max-width: 100%;
+}
+.image img {
+  max-width: 100%;
+}
 
 .question-title {
   width: 100%;

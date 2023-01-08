@@ -140,6 +140,12 @@ function handleImageUpload(event) {
   width: 100%;
 }
 
+.image {
+  max-width: 100%;
+}
+img {
+  max-width: 100%;
+}
 .answers {
   gap: 5px;
   display: flex;
