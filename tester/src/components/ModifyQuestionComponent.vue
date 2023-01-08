@@ -70,7 +70,6 @@ function handleImageUpload(event) {
     });
   }
 }
-console.log(editQuestion);
 </script>
 
 <template>

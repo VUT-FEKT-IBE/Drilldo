@@ -1,12 +1,17 @@
 <script setup>
+import { onMounted } from "vue";
 import AnswerComponent from "./AnswerComponent.vue";
+const MathJax = window.MathJax;
 
 const props = defineProps(["question"]);
+onMounted(() => {
+  MathJax.typeset();
+});
 </script>
 
 <template>
   <div class="question">
-    <div class="title">
+    <div class="question-title">
       {{ props.question.number }}. {{ props.question.question }}
     </div>
     <div class="image" v-if="props.question.image !== ''">
@@ -29,11 +34,10 @@ const props = defineProps(["question"]);
   flex-direction: column;
   place-items: center;
   width: 100%;
+  gap: 15px;
 }
 
-.title {
-  display: flex;
-  padding-bottom: 15px;
+.question-title {
   width: 100%;
 }
 
