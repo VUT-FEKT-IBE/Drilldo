@@ -31,14 +31,14 @@ if (questionRepo.all().length === 0) {
 }
 
 function testSetup() {
-  const questions = questionRepo.with("answers").get();
+  const testQuestions = questionRepo.with("answers").get();
   if (!weightedSorting.value) {
     // eslint-disable-next-line no-unused-vars
-    questions.sort((_a, _b) => {
+    testQuestions.sort((_a, _b) => {
       return Math.random() > 0.5 ? 1 : -1;
     });
   } else {
-    questions.sort((a, b) => {
+    testQuestions.sort((a, b) => {
       if (
         (a.numIncorrect + a.numCorrect === 0 &&
           !(b.numIncorrect + b.numCorrect === 0)) ||
@@ -63,24 +63,24 @@ function testSetup() {
   }
   // keep only the desired number of questions (from the start)
   if (questionNumber.value >= 0) {
-    questions.length = questionNumber.value;
+    testQuestions.length = questionNumber.value;
     // eslint-disable-next-line no-unused-vars
-    questions.sort((_a, _b) => {
+    testQuestions.sort((_a, _b) => {
       return Math.random() > 0.5 ? 1 : -1;
     });
   }
 
-  questions.forEach(function (question) {
+  testQuestions.forEach(function (question) {
     let maxScore = 0;
     // eslint-disable-next-line no-unused-vars
-    questions.sort((_a, _b) => {
+    question.answers.sort((_a, _b) => {
       return Math.random() > 0.5 ? 1 : -1;
     });
 
     // keep only the desired number of answers in each question
     if (
       maxAnswerNumber.value > 0 &&
-      maxAnswerNumber.value <= question.answers.length
+      maxAnswerNumber.value < question.answers.length
     ) {
       question.answers.length = maxAnswerNumber.value;
     }
@@ -96,7 +96,7 @@ function testSetup() {
     });
   });
 
-  store.questions = questions;
+  questions.value = testQuestions;
   testReady.value = !testReady.value;
 }
 function validateQuestionNumber() {
