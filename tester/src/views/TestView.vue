@@ -13,6 +13,16 @@ const questionRepo = useRepo(QuestionModel);
 const store = useViewerStore();
 
 questionRepo.where("showResults", true).update({ showResults: false });
+questionRepo
+  .where("score", (value) => {
+    return value >= 1;
+  })
+  .update({ score: 0 });
+questionRepo
+  .where("maxScore", (value) => {
+    return value >= 1;
+  })
+  .update({ maxScore: 0 });
 
 store.index = 0;
 store.showMobileMenu = false;
@@ -71,7 +81,6 @@ function testSetup() {
   }
 
   testQuestions.forEach(function (question) {
-    let maxScore = 0;
     // eslint-disable-next-line no-unused-vars
     question.answers.sort((_a, _b) => {
       return Math.random() > 0.5 ? 1 : -1;
@@ -87,12 +96,13 @@ function testSetup() {
 
     question.answers.forEach(function (answer) {
       if (answer.correct) {
-        maxScore++;
+        question.maxScore++;
       }
     });
+
     questionRepo.save({
       id: question.id,
-      maxScore: maxScore,
+      maxScore: question.maxScore,
     });
   });
 

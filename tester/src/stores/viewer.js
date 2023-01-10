@@ -41,6 +41,6 @@ export const useViewerStore = defineStore(
     };
   },
   {
-    persist: false,
+    persist: true,
   }
 );
