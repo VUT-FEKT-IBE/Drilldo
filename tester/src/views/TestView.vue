@@ -91,19 +91,34 @@ function testSetup() {
       maxAnswerNumber.value > 0 &&
       maxAnswerNumber.value < question.answers.length
     ) {
-      question.answers.length = maxAnswerNumber.value;
+      var tempAnswers = JSON.parse(JSON.stringify(question.answers));
+      if (question.answers.some((a) => a.correct)) {
+        tempAnswers.length = maxAnswerNumber.value;
+
+        while (!tempAnswers.some((a) => a.correct)) {
+          tempAnswers = JSON.parse(JSON.stringify(question.answers));
+          // eslint-disable-next-line no-unused-vars
+          tempAnswers.sort((_a, _b) => {
+            return Math.random() > 0.5 ? 1 : -1;
+          });
+          tempAnswers.length = maxAnswerNumber.value;
+        }
+        question.answers = tempAnswers;
+      } else {
+        tempAnswers.length = maxAnswerNumber.value;
+      }
     }
 
+    question.maxScore = 0;
     question.answers.forEach(function (answer) {
       if (answer.correct) {
         question.maxScore++;
       }
     });
 
-    questionRepo.save({
-      id: question.id,
-      maxScore: question.maxScore,
-    });
+    questionRepo
+      .where("id", question.id)
+      .update({ maxScore: question.maxScore });
   });
 
   questions.value = testQuestions;
