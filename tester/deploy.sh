@@ -3,6 +3,9 @@
 # abort on errors
 set -e
 
+rm -rf ../docs
+mkdir ../docs
+
 # build
 bun run build
 
