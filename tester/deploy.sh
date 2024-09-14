@@ -1,10 +1,10 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # abort on errors
 set -e
 
 # build
-npm run build
+bun run build
 
 # navigate into the build output directory
 cd ../docs
@@ -14,10 +14,10 @@ echo > .nojekyll
 
 # dirty hack to get rid of 404s for router pages
 pages=("load" "explore" "test" "edit" "about")
-for page in ${pages[@]}
+for page in "${pages[@]}"
 do
   mkdir $page
-  ln -s ../index.html ./$page/index.html
+  ln -s ../index.html "./$page/index.html"
 done
 
 # if you are deploying to a custom domain
