@@ -6,35 +6,19 @@ Simply upload your questions in the format shown [here](https://github.com/VUT-F
 
 This application leverages the Browser's Local Storage to enable data persistence across sessions, which means that question sets will be saved across refreshes but no data is sent anywhere, it's purely localized.
 
-## Recommended IDE Setup for development
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur)
-
-## Project Setup
+## Project structure
 
 ```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-
-### Compile, Minify and push built files for Production
-
-```sh
-cd tester
-./deploy.sh
-# deploy script automatically runs 'git add -A', so before you commit,
-# check what's added and remove files that you don't want to have included
-git commit -m "your preffered commit message"
-git push
+.
+├── data # Included question sets
+├── docs # Build output, used for GitHub Pages
+└── drilldo # Vue 3 project
+    ├── public # Static files
+    │   └── data -> ../../data # Do not touch, symlink to data
+    └── src # Source code
+        ├── assets # Static assets
+        ├── components # Vue components
+        ├── router # Vue Router
+        ├── stores # Pinia stores
+        └── views # Vue views
 ```
