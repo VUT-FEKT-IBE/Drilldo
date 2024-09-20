@@ -917,7 +917,7 @@
     "answers": [
       {
         "text": "Osob poučených",
-        "correct": false
+        "correct": true
       },
       {
         "text": "Osob pro samostatnou činnost",
@@ -925,7 +925,7 @@
       },
       {
         "text": "Osob znalých",
-        "correct": true
+        "correct": false
       }
     ]
   },
